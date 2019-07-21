@@ -46,6 +46,12 @@ return [
             'provider' => 'users',
             'hash' => false,
         ],
+
+        'web-api' => [
+            'driver' => 'web-token',
+            'provider' => 'tokens',
+        ],
+
     ],
 
     /*
@@ -70,6 +76,12 @@ return [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
         ],
+
+        'tokens' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Token::class,
+        ],
+
 
         // 'users' => [
         //     'driver' => 'database',

@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Base;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Games;
+
 
 class IndexController extends Controller
 {
@@ -21,7 +23,10 @@ class IndexController extends Controller
 
     public function show()
     {
-        return view('layouts.default', compact('user'));
+        $Games = Games::all();
+        return view('base.index')
+            ->with('user');
     }
+
 
 }

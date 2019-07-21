@@ -16,13 +16,13 @@
     <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-
 <div id="wrapper">
 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="navbar-header">
             <a class="navbar-brand" href="index.html">控制台</a>
+            <a class="btn btn-dropbox" href="{{route('index')}}"></a>
         </div>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -58,24 +58,31 @@
             <div class="sidebar-nav navbar-collapse">
                 <ul class="nav" id="side-menu">
                     <li>
-                        <a href="{{ route('index') }}" class="active"><i class="fa fa-dashboard fa-fw"></i> 状态</a>
+                        <a href="{{'http://plugmanage.test/game/' .$Game}}" class="active"><i class="fa fa-dashboard fa-fw"></i> 列表</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> 游戏<span class="fa arrow"></span></a>
-
-                        <ul class="nav nav-second-level">
-                            @foreach ($Games as $Game)
-                                <li>
-                                    <a href="/game/{{$Game->GameId}}">{{$Game->GameName}}</a>
-                                </li>
-                            @endforeach
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-lock fa-fw"></i> API<span class="fa arrow"></span></a>
+                        <a href="{{'http://plugmanage.test/game/' .$Game . '/template'}}"><i class="fa fa-dashboard fa-fw"></i> 模板管理<span class="fa arrow"></span></a></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="{{ route('token') }}">Token</a>
+                                <a href="#">模板列表</a>
+                            </li>
+                            <li>
+                                <a href="#">插件设定</a>
+                            </li>
+                            <li>
+                                <a href="{{'http://plugmanage.test/game/' .$Game . '/database'}}">数据库配置</a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-gamepad fa-fw"></i> 插件管理<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="{{'http://plugmanage.test/game/' .$Game . '/pluglist'}}">插件列表</a>
+                            </li>
+                            <li>
+                                <a href="{{'http://plugmanage.test/game/' .$Game . '/plugshop'}}">插件市场</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -87,15 +94,12 @@
     @yield('content')
 
 
-    <script src="../js/jquery.min.js"></script>
+    <script src="../../js/jquery.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
-    <script src="../js/bootstrap.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
     <!-- Metis Menu Plugin JavaScript -->
-    <script src="../js/metisMenu.min.js"></script>
+    <script src="../../js/metisMenu.min.js"></script>
     <!-- Custom Theme JavaScript -->
-    <script src="../js/startmin.js"></script>
-
-</div>
-
+    <script src="../../js/startmin.js"></script>
 </body>
 </html>

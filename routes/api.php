@@ -13,6 +13,17 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::middleware('auth:web-api')->group(function () {
+    Route::get('/info','Api\BaseController@info');
+
+    Route::group(array('prefix'=>'304930'),function()
+    {
+        Route::get('/GetPlugs','Api\BaseController@info');
+        Route::get('/info','Api\BaseController@info');
+    });
+
+
+
+
 });
+

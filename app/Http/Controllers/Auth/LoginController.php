@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Models\User;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -23,13 +24,6 @@ class LoginController extends Controller
     use AuthenticatesUsers;
 
     /**
-     * Where to redirect users after login.
-     *
-     * @var string
-     */
-    protected $redirectTo = '/';
-
-    /**
      * Create a new controller instance.
      *
      * @return void
@@ -48,11 +42,23 @@ class LoginController extends Controller
 
     public function store(Request $request)
     {
-
         $credentials = $this->validate($request, [
             'username' => 'required|string|max:255',
             'password' => 'required'
         ]);
+
+
+
+        /*
+        $user = User::create([
+            'username' => $request->username,
+            'password' => bcrypt($request->password),
+        ]);
+
+        Auth::login($user);
+        */
+
+
 
         if (Auth::attempt($credentials)){
             session()->flash('success', '欢迎回来！');
