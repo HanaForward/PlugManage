@@ -1,27 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="17dfb580-964f-4273-8028-8030d130e39a" name="Default Changelist" comment="Login">
-      <change afterPath="$PROJECT_DIR$/config/pay.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PlugManage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PlugManage.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="17dfb580-964f-4273-8028-8030d130e39a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Game/Game_304930.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Game/Game_304930.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Games.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Games.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/PlugList.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/PlugList.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/PlugShop.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/PlugShop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Template.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Template.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_07_21_024813_create_plug_shops_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_07_21_024813_create_plug_shops_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_07_21_063830_create_templates_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_07_21_063830_create_templates_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/game/304930/database.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/game/304930/database.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/game/304930/plug_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/game/304930/plug_list.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/game/304930/plug_shop.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/game/304930/plug_shop.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/game/304930/template.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/game/304930/template.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/game/layouts/game_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/game/layouts/game_header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Shop/ShopController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+            <state relative-caret-position="133">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="e#45#66#0#PHP" expanded="true" />
               </folding>
@@ -460,12 +441,20 @@
       <workItem from="1563873441388" duration="4000" />
       <workItem from="1563873501105" duration="1392000" />
       <workItem from="1563937213415" duration="7480000" />
-      <workItem from="1563961584262" duration="6203000" />
+      <workItem from="1563961584262" duration="6463000" />
     </task>
+    <task id="LOCAL-00001" summary="Buy">
+      <created>1563973502204</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1563973502204</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135631000" />
+    <option name="totallyTimeSpent" value="135891000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -498,7 +487,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Login" />
-    <option name="LAST_COMMIT_MESSAGE" value="Login" />
+    <MESSAGE value="Buy" />
+    <option name="LAST_COMMIT_MESSAGE" value="Buy" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -875,8 +865,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Shop/ShopController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+        <state relative-caret-position="133">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="e#45#66#0#PHP" expanded="true" />
           </folding>
