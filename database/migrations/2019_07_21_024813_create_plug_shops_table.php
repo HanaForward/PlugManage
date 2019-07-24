@@ -15,7 +15,7 @@ class CreatePlugShopsTable extends Migration
     {
         Schema::create('plug_shops', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('uuid',36)->unique();
+            $table->string('uuidShort',8)->unique();
             $table->string('name',32);
             $table->unsignedBigInteger('game')->references('games')->on('id');
             $table->unsignedInteger('price')->nullable();

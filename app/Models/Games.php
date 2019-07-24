@@ -10,8 +10,12 @@ class Games extends Model
     public $timestamps = false;
 
     protected $fillable = [
-        'id', 'gameid', 'gamename',
+        'gameid', 'gamename',
     ];
+    protected $hidden = [
+        'id',
+    ];
+
 
     public function categories()
     {

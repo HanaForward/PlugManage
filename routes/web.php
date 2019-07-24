@@ -17,7 +17,14 @@ Route::group(['middleware' => 'guest'], function () {
 Route::delete('logout', 'Auth\LoginController@logout')->name('logout');
 
 
+
+
 Route::group(['middleware' => 'auth'], function () {
+
+    Route::group(['prefix'=>'shop','middleware'=>'throttle:4'],function(){
+        Route::POST('/', 'Shop\ShopController@buy')->name('buy');
+    });
+
 
     Route::group(array('prefix'=>'game'),function()
     {

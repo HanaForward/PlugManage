@@ -11,15 +11,12 @@
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
-
             <div class="row">
                 <div class="col-lg-12">
                     <div class="panel panel-default">
 
                         <div class="panel-heading">
                             数据库列表
-
-
                             <div class="pull-right">
                                 <button class="btn btn-default btn-sm">添加</button>
                             </div>
@@ -41,15 +38,14 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <tr class="odd gradeX">
+                                    <tr>
                                         <td>数据库1</td>
                                         <td>72f1eb0f</td>
-
                                         <td>127.0.0.1</td>
                                         <td>3306</td>
                                         <td>7b82</td>
                                         <td>Unturned</td>
-                                        <td><a>验证</a></td>
+                                        <td><a class="btn btn-xs btn-success" style="margin-right: 20px">验证</a><a class="btn btn-xs btn-danger">删除</a></td>
                                     </tr>
                                     </tbody>
                                 </table>
@@ -62,10 +58,8 @@
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
-
         </div>
     </div>
-
 @stop
 
 @extends('layouts._footer')

@@ -5,10 +5,13 @@ namespace App\Http\Controllers\Game;
 use App\Models\Games;
 use App\Models\PlugList;
 use App\Models\PlugShop;
+use App\Models\Template;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
+use Yansongda\LaravelPay\Facades\Pay;
+
 
 class Game_304930 extends Controller
 {
@@ -33,9 +36,9 @@ class Game_304930 extends Controller
     }
     public function template()
     {
-        return view('game.'  .  $this->Game  . '.template');
+        $template = Template::where(['user_id' => Auth::id(),'game_id' => $this->Game_Id])->get();
+        return view('game.'  .  $this->Game  . '.template',['templates' => $template]);
     }
-
     public function pluglist()
     {
         //$plug_list =PlugList::where('user_id',Auth::id())->->paginate(10)(10)->comments();
@@ -48,7 +51,6 @@ class Game_304930 extends Controller
         return view('game.'  .  $this->Game  . '.plug_shop',['plug_shop' => $plug_shop]);
     }
 
-
     public function categories()
     {
         if (is_null(cache('Game_Cache'))) {
@@ -56,7 +58,5 @@ class Game_304930 extends Controller
         }
         return cache('Game_Cache');
     }
-
-
 
 }

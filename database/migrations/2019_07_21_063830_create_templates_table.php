@@ -12,13 +12,14 @@ class CreateTemplatesTable extends Migration
      * @return void
      */
     public function up()
+
     {
         Schema::create('templates', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->unsignedBigInteger('game')->unsigned();
-            $table->foreign('game')->references('id')->on('games')->onDelete('cascade');
+            $table->unsignedBigInteger('game_id')->unsigned();
+            $table->foreign('game_id')->references('id')->on('games')->onDelete('cascade');
             $table->string('uuid',36)->unique();
             $table->string('alias',30)->nullable();
 

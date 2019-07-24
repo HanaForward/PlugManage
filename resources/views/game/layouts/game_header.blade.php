@@ -14,6 +14,7 @@
     <link href="/css/startmin.css" rel="stylesheet">
     <!-- Custom Fonts -->
     <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
 </head>
 <body>
 <div id="wrapper">
@@ -58,16 +59,14 @@
             <div class="sidebar-nav navbar-collapse">
                 <ul class="nav" id="side-menu">
                     <li>
-                        <a href="{{'http://plugmanage.test/game/' .$Game}}" class="active"><i class="fa fa-dashboard fa-fw"></i> 列表</a>
+                        <a href="{{'http://plugmanage.test/game/' .$Game}}" class="active"><i
+                                    class="fa fa-dashboard fa-fw"></i> 列表</a>
                     </li>
                     <li>
-                        <a href="{{'http://plugmanage.test/game/' .$Game . '/template'}}"><i class="fa fa-dashboard fa-fw"></i> 模板管理<span class="fa arrow"></span></a></a>
+                        <a><i class="fa fa-dashboard fa-fw"></i> 模板管理<span class="fa arrow"></span></a></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="#">模板列表</a>
-                            </li>
-                            <li>
-                                <a href="#">插件设定</a>
+                                <a href="{{'http://plugmanage.test/game/' .$Game . '/template'}}">模板列表</a>
                             </li>
                             <li>
                                 <a href="{{'http://plugmanage.test/game/' .$Game . '/database'}}">数据库配置</a>
@@ -91,8 +90,6 @@
             </div>
         </div>
     </nav>
-    @yield('content')
-
 
     <script src="../../js/jquery.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
@@ -101,5 +98,11 @@
     <script src="../../js/metisMenu.min.js"></script>
     <!-- Custom Theme JavaScript -->
     <script src="../../js/startmin.js"></script>
+
+
+    @yield('content')
+
+</div>
+
 </body>
 </html>

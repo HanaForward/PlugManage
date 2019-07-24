@@ -57,8 +57,7 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <button id="set" class="btn btn-default btn-xs"><a href="#">配置</a></button>
-                                    <button id="unload" class="btn btn-default btn-xs"><a href="#">卸载</a></button>
+                                    <button id="config" class="btn btn-default btn-xs"><a href="#">配置</a></button>
                                 </td>
                             </tr>
                             </tbody>
