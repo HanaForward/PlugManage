@@ -17,7 +17,10 @@ class CreatePlugShopsTable extends Migration
             $table->bigIncrements('id');
             $table->string('uuidShort',8)->unique();
             $table->string('name',32);
-            $table->unsignedBigInteger('game')->references('games')->on('id');
+
+            $table->unsignedBigInteger('game_id')->unsigned();
+            $table->foreign('game_id')->references('id')->on('games')->onDelete('CASCADE')->onUpdate('RESTRICT');
+
             $table->unsignedInteger('price')->nullable();
             $table->string('version',8)->nullable();
             $table->string('description',32)->nullable();

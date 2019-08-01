@@ -14,9 +14,5 @@ class PlugManage extends Controller
 
 
 
-
-
-
-
     }
 }

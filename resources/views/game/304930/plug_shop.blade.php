@@ -61,7 +61,10 @@
                                     <td>{{$plug->type}}</td>
                                     <td>{{$plug->description}}</td>
                                     <td>{{$plug->owner}}</td>
-                                    <td id="price">{{$plug->price}} RMB</td>
+                                    <td id="price">@if($plug->price == 0)免费
+                                        @else{{$plug->price}} RMB
+                                        @endif
+                                    </td>
                                     <td>
                                         <button id="buy" class="btn btn-success btn-xs" data-toggle="modal"
                                                 data-target="#Modal">购买
@@ -92,7 +95,7 @@
                     <div class="modal-body">
                         <form class="form-horizontal" action="{{route('buy')}}" method="POST" role="form">
                             {{ csrf_field() }}
-                            <input id="plug_uuid" type="hidden" name="uuid" value="d275d3f5-fb3a-4a0a-882a-3b2f90434c37">
+                            <input id="plug_uuid" type="hidden" name="uuid">
                             <div class="form-group">
                                 <label for="firstname" class="col-xs-2 control-label">插件名</label>
                                 <div class="col-xs-8">

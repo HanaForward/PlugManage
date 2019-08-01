@@ -21,9 +21,5 @@ Route::middleware('auth:web-api')->group(function () {
         Route::get('/GetPlugs','Api\BaseController@info');
         Route::get('/info','Api\BaseController@info');
     });
-
-
-
-
 });
 

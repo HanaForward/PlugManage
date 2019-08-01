@@ -53,10 +53,8 @@
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
-
         </div>
     </div>
-
 @stop
 
 @extends('layouts._footer')

@@ -16,10 +16,16 @@ class CreatePlugListsTable extends Migration
     {
         Schema::create('plug_lists', function (Blueprint $table) {
             $table->bigIncrements('id');
+
             $table->unsignedBigInteger('user_id')->unsigned();
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('CASCADE')->onUpdate('RESTRICT');
+
+            $table->unsignedBigInteger('game_id')->unsigned();
+            $table->foreign('game_id')->references('id')->on('games')->onDelete('CASCADE')->onUpdate('RESTRICT');
+
             $table->unsignedBigInteger('plug_id')->unsigned()->unique();;
-            $table->foreign('plug_id')->references('id')->on('plug_shops');
+            $table->foreign('plug_id')->references('id')->on('plug_shops')->onDelete('CASCADE')->onUpdate('RESTRICT');
+
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
         });
         Schema::enableForeignKeyConstraints();
