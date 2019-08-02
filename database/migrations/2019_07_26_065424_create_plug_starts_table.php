@@ -16,13 +16,13 @@ class CreatePlugStartsTable extends Migration
         Schema::create('plug_starts', function (Blueprint $table) {
             $table->bigIncrements('id');
 
-            $table->string('template_uuid',36)->unique();
+            $table->string('template_uuid',36);
             $table->foreign('template_uuid')->references('uuid')->on('templates')->onDelete('CASCADE')->onUpdate('RESTRICT');
 
             $table->unsignedBigInteger('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('CASCADE')->onUpdate('RESTRICT');
 
-            $table->unsignedBigInteger('plug')->unsigned()->unique();;
+            $table->unsignedBigInteger('plug')->unsigned();
             $table->foreign('plug')->references('id')->on('plug_lists')->onDelete('CASCADE')->onUpdate('RESTRICT');;
 
             $table->boolean('switch')->nullable()->default(false);

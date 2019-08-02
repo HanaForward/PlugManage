@@ -9,6 +9,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class ShopController extends Controller
 {
@@ -50,6 +51,7 @@ class ShopController extends Controller
                 PlugList::create([
                     'user_id' => $User->id,
                     'game_id' => $Plug->game_id,
+                    'uuid' => DB::raw('uuid()'),
                     'plug_id' => $Plug->id,
                 ]);
                 session()->flash('success', '购买成功！');

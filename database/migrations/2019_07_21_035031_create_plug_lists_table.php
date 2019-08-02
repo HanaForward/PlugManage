@@ -23,6 +23,8 @@ class CreatePlugListsTable extends Migration
             $table->unsignedBigInteger('game_id')->unsigned();
             $table->foreign('game_id')->references('id')->on('games')->onDelete('CASCADE')->onUpdate('RESTRICT');
 
+            $table->string('uuid',36)->unique();
+
             $table->unsignedBigInteger('plug_id')->unsigned()->unique();;
             $table->foreign('plug_id')->references('id')->on('plug_shops')->onDelete('CASCADE')->onUpdate('RESTRICT');
 

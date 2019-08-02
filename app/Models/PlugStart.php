@@ -10,12 +10,12 @@ class PlugStart extends Model
 
 
     protected $fillable = [
-
+        'template_uuid','user_id', 'plug','switch'
     ];
 
 
     protected $hidden = [
-        'id','user_id', 'plug_id','game_id','plug',
+        'id','user_id', 'plug','plug',
     ];
 
 

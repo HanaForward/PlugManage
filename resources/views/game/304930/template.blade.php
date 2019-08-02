@@ -76,14 +76,15 @@
                                     @foreach ($templates as $template)
                                         <tr>
                                             <td id="{{$template->uuid}}">{{$template->alias}}</td>
-                                            <td>1</td>
-                                            <td>1 <a class="btn btn-xs btn-success pull-right">修改</a></td>
-                                            <td>5
-                                                <button id="plug_set" class="btn btn-default btn-xs pull-right"  data-toggle="modal" data-target="#PlugSet" data-uuid="{{$template->uuid}}">修改
+                                            <td>0</td>
+                                            <td>0 <a class="btn btn-xs btn-success pull-right">修改</a></td>
+                                            <td>0
+                                                <button id="plug_set" class="btn btn-default btn-xs pull-right"
+                                                        data-toggle="modal" data-target="#PlugSet"
+                                                        data-uuid="{{$template->uuid}}">修改
                                                 </button>
                                             </td>
                                             <td><a class="btn btn-xs btn-danger pull-right">删除</a></td>
-
                                         </tr>
                                     @endforeach
                                     </tbody>
@@ -155,15 +156,16 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <tr  v-for="(item,index) in newsList">
+                                    <tr v-for="(item,index) in newsList">
                                         <th>
                                             <div class="checkbox">
-                                                <input v-bind:id="item.uuidShort"  v-bind:name=item.uuidShort  class="styled" type="checkbox"  v-model=item.switch>
-                                                <label v-bind:for=item.uuidShort class="styled" hidden="hidden"></label>
+                                                <input v-bind:id="item.uuid" v-model="item.switch"
+                                                       v-bind:name=item.uuid class="styled" type="checkbox">
+                                                <label v-bind:for="item.uuid" class="styled" hidden="hidden"></label>
                                             </div>
                                         </th>
                                         <th>
-                                            <label for="@{{item.uuidShort}}">@{{item.name}}</label>
+                                            <label v-bind:for="item.uuid">@{{item.name}}</label>
                                         </th>
                                         <th>
                                             <select name="version">
@@ -189,7 +191,7 @@
                                 <div class="text-center">
                                     <span id="returnMessage" class="glyphicon"> </span>
                                     <button type="button" class="btn btn-default" data-dismiss="modal">取消修改</button>
-                                    <button type="submit" class="btn btn-primary">提交更改</button>
+                                    <button type="button" @click="b()" class="btn btn-primary">提交更改</button>
                                 </div>
 
                             </form>
@@ -200,12 +202,6 @@
             </div><!-- /.modal -->
         </div>
 
-        <div id="app">
-            <h1>网站列表</h1>
-            <button @click="a()">1</button>
-            <div></div>
-        </div>
-
     </div>
 
     <script type="text/javascript">
@@ -213,31 +209,54 @@
         var app = new Vue({
             el: '#table',
             data: {
-                newsList: null
+                newsList: null,
+                template_uuid : null,
+
             },
             methods: {
                 //新增
                 a(uuid) {
-                        axios
-                            .get('/post_pluglist', {
-                                params: {
-                                    game_id: 1,
-                                    template_uuid:uuid,
-                                }
-                            })
-                            .then(
-                                response => {
-                                    this.newsList = response.data;
-                                    this.$set();
-                                }
-                            )
-                            .catch(function (error) { // 请求失败处理
-                                console.log(error);
-                            });
+                    this.template_uuid = uuid;
+                    axios
+                        .get('/get_show_pluglist', {
+                            params: {
+                                game_id: 1,
+                                template_uuid: uuid,
+                            }
+                        })
+                        .then(
+                            response => {
+                                this.newsList = response.data;
+                                this.$set();
+                            }
+                        )
+                        .catch(function (error) { // 请求失败处理
+                            console.log(error);
+                        });
 
-                    }
+                },
+                b() {
+                    axios.get("/get_update_pluglist", {
+                        params: {
+                            data:
+                                JSON.stringify(this.newsList),
+                                template_uuid : this.template_uuid
+                        }
+
+                    })
+                        .then(
+                            response => {
+                            }
+                        )
+                        .catch(function (error) { // 请求失败处理
+                            console.log(error);
+                        });
+
+
+                    console.log(JSON.stringify(this.newsList))
                 }
-        })
+            }
+        });
 
 
         $(function () {

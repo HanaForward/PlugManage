@@ -29,7 +29,9 @@ Route::group(['middleware' => 'auth'], function () {
         Route::POST('/template/create', 'Game\TemplateController@create')->name('template/create');
     });
 
-    Route::get('/post_pluglist', 'Plug\PlugController@pluglist')->name('Post_PlugList');
+    Route::get('/get_show_pluglist', 'Plug\PlugController@show');
+    Route::get('/get_update_pluglist', 'Plug\PlugController@update');
+
 
 
     Route::group(array('prefix'=>'game'),function()
