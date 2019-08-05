@@ -68,7 +68,7 @@
                                         <th>别名</th>
                                         <th>服务器</th>
                                         <th>数据库</th>
-                                        <th>插件数量</th>
+                                        <th>插件</th>
                                         <th>管理</th>
                                     </tr>
                                     </thead>
@@ -78,13 +78,13 @@
                                             <td id="{{$template->uuid}}">{{$template->alias}}</td>
                                             <td>0</td>
                                             <td>0 <a class="btn btn-xs btn-success pull-right">修改</a></td>
-                                            <td>0
+                                            <td>{{$template->count_plug}}
                                                 <button id="plug_set" class="btn btn-default btn-xs pull-right"
                                                         data-toggle="modal" data-target="#PlugSet"
                                                         data-uuid="{{$template->uuid}}">修改
                                                 </button>
                                             </td>
-                                            <td><a class="btn btn-xs btn-danger pull-right">删除</a></td>
+                                            <td><a href="{{route('template/delete').'?template_uuid='.$template->uuid}}" class="btn btn-xs btn-danger pull-right">删除</a></td>
                                         </tr>
                                     @endforeach
                                     </tbody>
@@ -112,7 +112,7 @@
                     <div class="modal-body">
                         <form class="form-horizontal" action="{{route('template/create')}}" method="POST" role="form">
                             {{ csrf_field() }}
-                            <input type="hidden" name="game_id" value="{{$game_id}}">
+                            <input type="hidden" name="game" value="{{$game}}">
                             <div class="form-group">
                                 <label class="col-xs-2 control-label">别名</label>
                                 <div class="col-xs-8">
@@ -191,7 +191,7 @@
                                 <div class="text-center">
                                     <span id="returnMessage" class="glyphicon"> </span>
                                     <button type="button" class="btn btn-default" data-dismiss="modal">取消修改</button>
-                                    <button type="button" @click="b()" class="btn btn-primary">提交更改</button>
+                                    <button type="button" @click="b()" data-dismiss="modal" class="btn btn-primary">提交更改</button>
                                 </div>
 
                             </form>
@@ -220,7 +220,6 @@
                     axios
                         .get('/get_show_pluglist', {
                             params: {
-                                game_id: 1,
                                 template_uuid: uuid,
                             }
                         })
@@ -252,8 +251,10 @@
                             console.log(error);
                         });
 
+                },
+                clear(){
+                    this.newsList = null;
 
-                    console.log(JSON.stringify(this.newsList))
                 }
             }
         });
@@ -261,6 +262,7 @@
 
         $(function () {
             $('#PlugSet').on('show.bs.modal', function (event) {
+                app.clear();
                 var modal = $(this);  //get modal itself
                 var uuid = $(event.relatedTarget).data('uuid');
                 app.a(uuid);

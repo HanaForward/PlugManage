@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers\Plug;
 
+use App\Models\Games;
 use App\Models\PlugList;
 use App\Models\PlugShop;
 use App\Models\PlugStart;
+use App\Models\Server;
+use App\Models\Template;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
@@ -73,6 +76,42 @@ class PlugController extends Controller
 
 
         return $data;
+    }
+
+    public function get_templates(Request $request){
+        $user_id = Auth::id();
+        $game_id = $request->game_id;
+
+        $game= Games::where([
+            "gameid" => $game_id,
+        ])->first()->id;
+
+
+        $Template = Template::where([
+            'user_id' => $user_id,
+            'game_id' => $game,
+        ])->get();
+
+        return $Template;
+    }
+
+    public function set_templates(Request $request){
+        $user_id = Auth::id();
+        $uuid = $request->uuid;
+        $server_uuid =  $request->server_uuid;
+
+
+        $Server = Server::where([
+            'server_uuid' => $server_uuid,
+            'user_id' => $user_id,
+        ])->first();
+
+        $Template = Template::where([
+            'user_id' => $user_id,
+            'uuid' => $uuid,
+        ])->get();
+
+        return ;
     }
 
 

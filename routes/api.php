@@ -16,10 +16,17 @@ use Illuminate\Http\Request;
 Route::middleware('auth:web-api')->group(function () {
     Route::get('/info','Api\BaseController@info');
 
-    Route::group(array('prefix'=>'304930'),function()
+
+    Route::group(array('prefix'=>'{gameid}'),function($postId)
     {
         Route::get('/GetPlugs','Api\BaseController@info');
         Route::get('/info','Api\BaseController@info');
+
+        Route::get('/login', 'Api\Game\Game_304930@login');
+
+        Route::get('/get_plug', 'Api\Game\Game_304930@GetPlug');
+
+
     });
 });
 

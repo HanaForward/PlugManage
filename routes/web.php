@@ -23,14 +23,31 @@ Route::group(['middleware' => 'auth'], function () {
     Route::POST('/token/update','Base\TokenController@update')->name('token/update');
 
 
-
-    Route::group(['prefix'=>'shop','middleware'=>'throttle:4'],function(){
-        Route::POST('/buy', 'Shop\ShopController@buy')->name('buy');
-        Route::POST('/template/create', 'Game\TemplateController@create')->name('template/create');
+    Route::group(['middleware'=>'throttle:10'],function(){
+        Route::get('/get_show_pluglist', 'Plug\PlugController@show');
+        Route::get('/get_update_pluglist', 'Plug\PlugController@update');
+        Route::get('/get_templates', 'Plug\PlugController@get_templates');
+        Route::get('/set_templates', 'Plug\PlugController@set_templates');
     });
 
-    Route::get('/get_show_pluglist', 'Plug\PlugController@show');
-    Route::get('/get_update_pluglist', 'Plug\PlugController@update');
+
+
+
+
+    Route::group(['prefix'=>'shop','middleware'=>'throttle:10'],function(){
+        Route::POST('/buy', 'Shop\ShopController@buy')->name('buy');
+
+    });
+
+
+    Route::group(['middleware'=>'throttle:5'],function(){
+        Route::GET('/template/delete', 'Game\TemplateController@delete')->name('template/delete');
+        Route::POST('/template/create', 'Game\TemplateController@create')->name('template/create');
+        Route::POST('/server/update', 'Game\Game_304930@update')->name('server/update');
+        Route::GET('/server/delete', 'Game\Game_304930@delete')->name('server/delete');
+    });
+
+
 
 
 

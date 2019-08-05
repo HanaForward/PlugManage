@@ -18,10 +18,13 @@ class CreateTemplatesTable extends Migration
             $table->bigIncrements('id');
             $table->string('uuid',36)->unique();
             $table->string('alias',30)->nullable();
+
             $table->unsignedBigInteger('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('CASCADE')->onUpdate('RESTRICT');
+
             $table->unsignedBigInteger('game_id')->unsigned();
             $table->foreign('game_id')->references('id')->on('games')->onDelete('CASCADE')->onUpdate('RESTRICT');
+
             $table->timestamps();
         });
     }
