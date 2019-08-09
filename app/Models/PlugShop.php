@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class PlugShop extends Model
 {
     protected $fillable = [
-        'uuidShort','name','owner','type','price','description','updated_at','game_id',
+        'uuidShort','name','user_id','type','price','description','updated_at','game_id',
     ];
 
     protected $hidden = [

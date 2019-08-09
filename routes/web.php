@@ -13,6 +13,9 @@ Route::delete('logout', 'Auth\LoginController@logout')->name('logout');
 
 Route::group(['middleware' => 'auth'], function () {
 
+    Route::resource('users', 'Base\UsersController', ['only' => ['show', 'update', 'edit']]);
+
+
     Route::get('/', 'Base\IndexController@show')->name('index');
     Route::get('/index','Base\IndexController@show')->name('index');
     Route::get('/token','Base\TokenController@show')->name('token');
@@ -24,27 +27,27 @@ Route::group(['middleware' => 'auth'], function () {
 
 
     Route::group(['middleware'=>'throttle:10'],function(){
-        Route::get('/get_show_pluglist', 'Plug\PlugController@show');
-        Route::get('/get_update_pluglist', 'Plug\PlugController@update');
-        Route::get('/get_templates', 'Plug\PlugController@get_templates');
-        Route::get('/set_templates', 'Plug\PlugController@set_templates');
-    });
+        Route::get('/get_show_pluglist', 'Base\TemplateController@show');
+        Route::get('/get_update_pluglist', 'Base\TemplateController@update');
 
+        Route::get('/get_templates', 'Base\TemplateController@get_templates');
+        Route::get('/set_templates', 'Base\TemplateController@set_templates');
+    });
 
 
 
 
     Route::group(['prefix'=>'shop','middleware'=>'throttle:10'],function(){
-        Route::POST('/buy', 'Shop\ShopController@buy')->name('buy');
-
+        Route::POST('/buy', 'Base\ShopController@buy')->name('buy');
     });
 
 
     Route::group(['middleware'=>'throttle:5'],function(){
-        Route::GET('/template/delete', 'Game\TemplateController@delete')->name('template/delete');
-        Route::POST('/template/create', 'Game\TemplateController@create')->name('template/create');
-        Route::POST('/server/update', 'Game\Game_304930@update')->name('server/update');
-        Route::GET('/server/delete', 'Game\Game_304930@delete')->name('server/delete');
+        Route::GET('/template/delete', 'Base\TemplateController@delete')->name('template/delete');
+        Route::POST('/template/create', 'Base\TemplateController@create')->name('template/create');
+
+        Route::POST('/server/update', 'Base\Game_304930@update')->name('server/update');
+        Route::GET('/server/delete', 'Base\Game_304930@delete')->name('server/delete');
     });
 
 
@@ -54,6 +57,23 @@ Route::group(['middleware' => 'auth'], function () {
     Route::group(array('prefix'=>'game'),function()
     {
 
+        Route::group(array('prefix'=>'{game}'),function()
+        {
+            Route::get('/','Game\BaseController@create')->name('game.show');
+
+            Route::get('/template','Game\BaseController@template')->name('game.template');
+            Route::get('/database','Game\BaseController@database')->name('game.database');
+            Route::get('/pluglist','Game\BaseController@pluglist')->name('game.pluglist');
+            Route::get('/plugshop','Game\BaseController@plugshop')->name('game.plugshop');
+
+
+
+        });
+
+
+
+
+        /*
         Route::get('{game}/', function ($postId) {
             $namespace = 'App\Http\Controllers\Game\\';
             $className = $namespace . ("Game_" . $postId);
@@ -69,8 +89,37 @@ Route::group(['middleware' => 'auth'], function () {
             return call_user_func(array($tempObj,$commentId));
         })->where('commentId', '[a-z]+');
 
+        */
     });
-    
+
+
+    Route::group(array('prefix'=>'Manager'),function()
+    {
+        Route::get('/','Admin\ShopController@create')->middleware('can:view,App\Models\PlugShop')->name('admin');
+
+
+
+
+
+        Route::group(array('prefix'=>'Game/{GameId}'),function()
+        {
+
+
+
+            Route::get('/Plug','Admin\PlugController@show')->name("admin.plug");
+            Route::POST('/Plug/Publish','Admin\PlugController@publish')->name('admin.plug.publish');
+
+        });
+
+
+    });
+
+
+
+
+
+
+
 });
 
 

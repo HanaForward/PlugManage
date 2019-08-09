@@ -54,7 +54,6 @@ class LoginController extends Controller
             'username' => $request->username,
             'password' => bcrypt($request->password),
         ]);
-
         Auth::login($user);
         */
 
@@ -64,12 +63,9 @@ class LoginController extends Controller
             session()->flash('success', '欢迎回来！');
             return redirect()->route("index",[Auth::user()]);
         }
-        else
-        {
-            session()->flash('danger', '账号或密码错误！');
-            return redirect()->back()->withInput();
-        }
-        return ;
+        session()->flash('danger', '账号或密码错误！');
+        return redirect()->back()->withInput();
+
     }
 
     public function logout()

@@ -16,7 +16,7 @@ class CreateTemplatesTable extends Migration
     {
         Schema::create('templates', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('uuid',36)->unique();
+            $table->string('template_uuid',36)->unique();
             $table->string('alias',30)->nullable();
 
             $table->unsignedBigInteger('user_id')->unsigned();

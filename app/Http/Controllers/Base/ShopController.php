@@ -1,18 +1,21 @@
 <?php
 
-namespace App\Http\Controllers\Shop;
+namespace App\Http\Controllers\Base;
 
 use App\Models\Order;
 use App\Models\PlugList;
 use App\Models\PlugShop;
 use App\Models\User;
+
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
+
 class ShopController extends Controller
 {
+
     public function buy(Request $request)
     {
         $pay_channel = $request->pay_channel;
@@ -62,9 +65,7 @@ class ShopController extends Controller
                 session()->flash('danger', '金额不足,无法购买!');
                 return redirect()->back();
             }
-            return $Plug;
         }
-
         return $pay_channel;
     }
 }

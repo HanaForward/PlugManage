@@ -18,9 +18,7 @@ class CreatePlugStoragesTable extends Migration
             $table->unsignedBigInteger('plug_id')->unsigned();
             $table->foreign('plug_id')->references('id')->on('plug_shops');
             $table->string('version',9);
-
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
-
         });
         DB::statement("ALTER TABLE plug_storages ADD data MediumBlob AFTER version");
         Schema::enableForeignKeyConstraints();

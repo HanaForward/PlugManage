@@ -2,28 +2,33 @@
 
 namespace App\Providers;
 
-use Illuminate\Support\Facades\Gate;
+use App\Models\PlugShop;
+use App\Models\User;
+use App\Policies\ShopPolicy;
+use App\Policies\UserPolicy;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 
 class AuthServiceProvider extends ServiceProvider
 {
     /**
-     * The policy mappings for the application.
+     * 应用的策略映射。
      *
      * @var array
      */
     protected $policies = [
-        // 'App\Model' => 'App\Policies\ModelPolicy',
+        PlugShop::class => ShopPolicy::class,
+        User::class=> UserPolicy::class,
     ];
 
     /**
-     * Register any authentication / authorization services.
+     * 注册任意应用认证、应用授权服务
      *
      * @return void
      */
     public function boot()
     {
         $this->registerPolicies();
+
 
         //
     }

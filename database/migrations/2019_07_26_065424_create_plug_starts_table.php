@@ -17,7 +17,7 @@ class CreatePlugStartsTable extends Migration
             $table->bigIncrements('id');
 
             $table->string('template_uuid',36);
-            $table->foreign('template_uuid')->references('uuid')->on('templates')->onDelete('CASCADE')->onUpdate('RESTRICT');
+            $table->foreign('template_uuid')->references('template_uuid')->on('templates')->onDelete('CASCADE')->onUpdate('RESTRICT');
 
             $table->unsignedBigInteger('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('CASCADE')->onUpdate('RESTRICT');
