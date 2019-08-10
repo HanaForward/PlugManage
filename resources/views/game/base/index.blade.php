@@ -1,4 +1,4 @@
-@extends('layouts._header', ['Games' => app(\App\Models\Games::class)->categories()])
+@extends('game.layouts.game_header', ['Games' => app(\App\Models\Games::class)->categories()])
 
 <script src="https://cdn.staticfile.org/vue/2.6.10/vue.min.js"></script>
 <script src="https://cdn.staticfile.org/axios/0.18.0/axios.min.js"></script>

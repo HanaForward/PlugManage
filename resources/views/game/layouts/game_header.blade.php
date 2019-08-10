@@ -23,9 +23,10 @@
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="navbar-header">
             <div class="navbar-brand">
-                <a href="{{route('index')}}" >控制台</a>
+                <a href="{{route('index')}}">控制台</a>
             </div>
-            <a class="btn btn-dropbox fa fa-angle-left fa-2x" href="{{route('index')}}" style="max-width:100px;margin-top:3px;"></a>
+            <a class="btn btn-dropbox fa fa-angle-left fa-2x" href="{{route('index')}}"
+               style="max-width:100px;margin-top:3px;"></a>
 
 
         </div>
@@ -61,36 +62,39 @@
 
         <div class="navbar-default sidebar" role="navigation">
             <div class="sidebar-nav navbar-collapse">
-                <ul class="nav" id="side-menu">
-                    <li>
-                        <a href="{{'http://plugmanage.test/game/' .$Game}}" class="active"><i
-                                    class="fa fa-dashboard fa-fw"></i> 列表</a>
-                    </li>
-                    <li>
-                        <a><i class="fa fa-dashboard fa-fw"></i> 模板管理<span class="fa arrow"></span></a></a>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a href="{{'http://plugmanage.test/game/' .$Game . '/template'}}">模板列表</a>
-                            </li>
-                            <li>
-                                <a href="{{'http://plugmanage.test/game/' .$Game . '/database'}}">数据库配置</a>
-                            </li>
-                        </ul>
+                @foreach ($Games as $Game)
+                    <ul class="nav" id="side-menu">
+                        <li>
 
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-gamepad fa-fw"></i> 插件管理<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a href="{{'http://plugmanage.test/game/' .$Game . '/pluglist'}}">插件列表</a>
-                            </li>
-                            <li>
-                                <a href="{{'http://plugmanage.test/game/' .$Game . '/plugshop'}}">插件市场</a>
-                            </li>
-                        </ul>
-                        <!-- /.nav-second-level -->
-                    </li>
-                </ul>
+                            <a href="{{route('game.show',$Game->GameId)}}" class="active"><i
+                                        class="fa fa-dashboard fa-fw"></i> 列表</a>
+                        </li>
+                        <li>
+                            <a><i class="fa fa-dashboard fa-fw"></i> 模板管理<span class="fa arrow"></span></a></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="{{route('game.template',$Game->GameId)}}">模板列表</a>
+                                </li>
+                                <li>
+                                    <a href="{{route('game.database',$Game->GameId)}}">数据库配置</a>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-gamepad fa-fw"></i> 插件管理<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="{{route('game.pluglist',$Game->GameId)}}">插件列表</a>
+                                </li>
+                                <li>
+                                    <a href="{{route('game.plugshop',$Game->GameId)}}">插件市场</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                    </ul>
+                @endforeach
             </div>
         </div>
     </nav>

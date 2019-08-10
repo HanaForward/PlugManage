@@ -6,6 +6,7 @@ use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use App\Http\Controllers\Controller;
 
 
+
 class IndexController extends Controller
 {
     //
@@ -15,6 +16,7 @@ class IndexController extends Controller
 
     public function show()
     {
+
         return view('base.index')
             ->with('user');
     }
