@@ -1,4 +1,4 @@
-@extends('game.layouts.game_header', ['Game' => app(\App\Http\Controllers\Game\Game_304930::class)->categories()])
+@extends('layouts._header', ['Games' => app(\App\Models\Games::class)->categories()])
 
 @section('title', '管理')
 

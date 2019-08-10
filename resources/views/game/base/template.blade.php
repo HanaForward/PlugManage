@@ -1,4 +1,4 @@
-@extends('game.layouts.game_header', ['Game' => app(\App\Http\Controllers\Game\Game_304930::class)->categories()])
+@extends('layouts._header', ['Games' => app(\App\Models\Games::class)->categories()])
 <link rel="stylesheet" href="http://demo.htmleaf.com/1508/201508261557/css/build.css"
       xmlns:v-bind="http://www.w3.org/1999/xhtml">
 
