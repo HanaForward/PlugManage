@@ -87,6 +87,7 @@ class Game_304930 extends Controller
             $uuid = DB::select("select uuid()")[0]->{'uuid()'};
         }
 
+        $Json = Arr::add($Json,'Token',$request->token);
         $Json = Arr::add($Json,'UUID',$uuid);
         $Json = Arr::add($Json,'Template',$Template_Id);
         $Json = Arr::add($Json,'Plug',$Plug);
