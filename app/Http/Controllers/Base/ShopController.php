@@ -54,7 +54,7 @@ class ShopController extends Controller
                 PlugList::create([
                     'user_id' => $User->id,
                     'game_id' => $Plug->game_id,
-                    'uuid' => DB::raw('uuid()'),
+                    'plug_uuid' => DB::raw('uuid()'),
                     'plug_id' => $Plug->id,
                 ]);
                 session()->flash('success', '购买成功！');

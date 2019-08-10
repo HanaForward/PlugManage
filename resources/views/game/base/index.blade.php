@@ -46,7 +46,7 @@
                                                          data-uuid="{{$Server->server_uuid}}"
                                                          data-target="#ChangeTemplate">切换</a></td>
                                             <td class="center">Null</td>
-                                            <td class="center"><a href="{{route('server/delete').'?server_uuid='.$Server->server_uuid}}" class="btn btn-danger btn-xs pull-right">删除</a></td>
+                                            <td class="center"><a href="{{route('server.delete',$game_id).'?server_uuid='.$Server->server_uuid}}" class="btn btn-danger btn-xs pull-right">删除</a></td>
                                         </tr>
                                     @endforeach
                                     </tbody>
@@ -72,15 +72,15 @@
                     <h4 class="modal-title text-center" id="myModalLabel">选择模板</h4>
                 </div>
                 <div class="modal-body">
-                    <form method="post" action="{{route('server/update')}}"  >
+                    <form method="post" action="{{route('server.update',$game_id)}}"  >
                         {{ csrf_field() }}
                         <input id="server_uuid" type="hidden" name="server_uuid" value="">
                         <div class="form-group">
                             <label class="col-xs-2 control-label">模板</label>
                             <div class="col-xs-8" id="app">
                                 <select  name="template_uuid">
-                                    <option v-for="item in newsList" v-bind:value="item.uuid">
-                                        @{{item.alias}}(@{{item.uuid}})
+                                    <option v-for="item in newsList" v-bind:value="item.template_uuid">
+                                        @{{item.alias}}(@{{item.template_uuid}})
                                     </option>
                                 </select>
                             </div>

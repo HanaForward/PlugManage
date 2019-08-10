@@ -13,7 +13,7 @@ class Order extends Model
     ];
 
     protected $hidden = [
-        'id',
+        'id', 'user_id', 'plug_id','state'
     ];
 
 }

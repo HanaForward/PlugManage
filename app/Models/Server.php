@@ -12,7 +12,7 @@ class Server extends Model
 
 
     protected $hidden = [
-
+        'user_id','game_id'
     ];
 
 

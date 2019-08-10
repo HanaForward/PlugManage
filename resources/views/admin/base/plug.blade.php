@@ -46,8 +46,10 @@
                             </div>
                         </div>
                         <hr/>
+
                         <!-- Table -->
                         <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                            @include('shared._errors')
                             <thead>
                             <tr>
                                 <th style="width: 80px">uuidShort</th>

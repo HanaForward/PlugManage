@@ -25,13 +25,19 @@ class TokenController extends Controller
 
     public function show()
     {
-        $user = Auth::user();
-        $Tokens = Token::all();
+        $user_id =  Auth::id();
+        $Tokens = Token::where([
+            'user_id' => $user_id,
+        ])->get();
         return view('base.token')
             ->with('Tokens',$Tokens);
     }
     public function create(Request $request)
     {
+
+
+       $user_id =  Auth::id();
+
         $credentials = $this->validate($request, [
             'alias' => 'required|string|max:30',
         ]);
@@ -41,20 +47,25 @@ class TokenController extends Controller
             'token' => Str::random(16),
             'alias' => $request->alias,
             'switch' => 1,
-            'user_id' => 1,
+            'user_id' => $user_id,
         ]);
 
-        $Tokens = Token::all();
-        return view('base.token')
-            ->with('Tokens',$Tokens);
+
+        return redirect('token');
+
 
     }
     public function delete(Request $request)
     {
+        $user_id =  Auth::id();
+
         //$token = Token::where('token',$request->token)->get();
-        $flag = Token::where('token',$request->Token)->delete();
-        $Tokens = Token::all();
-        if($flag)
+        $token = Token::where([
+            'token' => $request->Token,
+            'user_id' => $user_id,
+        ])->first();
+
+        if($token->delete())
             return redirect('token');
         else
             return redirect()->back();

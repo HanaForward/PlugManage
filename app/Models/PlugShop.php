@@ -11,7 +11,13 @@ class PlugShop extends Model
     ];
 
     protected $hidden = [
-        'id','game_id','created_at'
+        'id','user_id','game_id','created_at'
     ];
+
+
+    public function owner()
+    {
+        return $this->belongsTo(User::class,'user_id','id');
+    }
 
 }

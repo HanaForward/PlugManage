@@ -47,14 +47,17 @@ class Game_304930 extends Controller
             if (!is_null($Server)) {
                 $Template = Template::find($Server->template_id);
 
-
                 if (!is_null($Template)) {
-                    $Json = Arr::add($Json,'Template',$Server->template_uuid);//添加模板ID
+
+                    $Template_Id = $Template->template_uuid; //添加模板ID
+
+
+                    //$Json = Arr::add($Json,'Template',$Server->template_uuid);
+
                     $PlugStart = PlugStart::where([
                         'user_id' => $user_id,
-                        'template_uuid' => $Template->uuid,
+                        'template_uuid' => $Template->template_uuid,
                     ])->get();
-
 
                     if(!is_null($PlugStart))
                     {
@@ -72,7 +75,6 @@ class Game_304930 extends Controller
                             array_push($Plug,$data);
                         }
                     }
-                    $Template_Id =  $Template->uuid;
                 }
             } else {
                 $Server = Server::create([
@@ -145,10 +147,5 @@ class Game_304930 extends Controller
             fclose($handle);
         }, 200, $headers)->send();
 
-
-
-
     }
-
-
 }

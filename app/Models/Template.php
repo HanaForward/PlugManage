@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Template extends Model
 {
     protected $fillable = [
-        'uuid', 'alias','user_id','game_id',
+        'template_uuid', 'alias','user_id','game_id',
     ];
 
     protected $hidden = [

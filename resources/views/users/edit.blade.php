@@ -33,9 +33,8 @@
 
                                 @include('shared._errors')
 
-
                                 <div class="form-group">
-                                    <label for="name-field">用户名</label>
+                                    <label for="name-field">昵 称</label>
                                     <input class="form-control" type="text" name="name" id="name-field" value="{{ old('name', $user->name) }}" />
                                 </div>
                                 <div class="form-group">

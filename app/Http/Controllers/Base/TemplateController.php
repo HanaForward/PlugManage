@@ -30,7 +30,7 @@ class TemplateController extends Controller
             'user_id' => $user_id,
             'game_id' => $Game,
             'alias' => $request->alias,
-            'uuid' => DB::raw('uuid()'),
+            'template_uuid' => DB::raw('uuid()'),
         ]);
 
         session()->flash('success', '创建成功');
@@ -44,7 +44,7 @@ class TemplateController extends Controller
 
         $Template = Template::where([
             'user_id' => $user_id,
-            'uuid' => $template_uuid,
+            'template_uuid' => $template_uuid,
         ])->first();
 
         $Template->delete();
@@ -67,7 +67,7 @@ class TemplateController extends Controller
                 $flag = true;
                 $Plug = PlugList::where([
                     'user_id'=> $user_id,
-                    'uuid'=>$Arr->uuid,
+                    'plug_uuid'=>$Arr->uuid,
                 ])->first();
                 if(!is_null($Plug))
                 {
@@ -86,8 +86,6 @@ class TemplateController extends Controller
                             'switch' => 1,
                         ]);
                     }
-
-
                 }
             }
             else
@@ -144,27 +142,32 @@ class TemplateController extends Controller
 
         $Template = Template::where([
             'user_id' => $user_id,
-            'uuid' => $uuid,
+            'template_uuid' => $uuid,
         ])->get();
 
         return ;
     }
 
+    //Get模板对应插件
     public function show(Request $request){
 
         $user_id = Auth::id();
-        $PlugStart = DB::select("SELECT * FROM plug_lists LEFT JOIN (SELECT * FROM plug_starts WHERE user_id=".$user_id." and template_uuid = '".$request->template_uuid . "') as plug_starts ON plug_starts.plug = plug_lists.id WHERE plug_lists.user_id=".$user_id);
+        $PlugStart = DB::select("SELECT * FROM plug_lists LEFT JOIN (SELECT * FROM plug_starts WHERE user_id=".$user_id." and template_uuid = '".$request->template_uuid . "') as plug_starts ON plug_starts.plug = plug_lists.plug_id WHERE plug_lists.user_id=".$user_id);
+
+        return $PlugStart;
+
+
         $Array = array();
         foreach ($PlugStart  as $Arr)
         {
-            if($Arr->switch && !is_null($Arr->switch))
+            if($Arr->switch)
                 $flag = true;
             else
                 $flag = false;
 
             $Plug = PlugShop::find($Arr->plug_id);
             $new_array = array([
-                'uuid' => $Arr->uuid,
+                'uuid' => $Arr->plug_uuid,
                 'name' =>$Plug->name,
                 'switch' => $flag,
 

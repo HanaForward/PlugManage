@@ -35,12 +35,12 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
-    public function create()
+    public function show()
     {
         return view('auth.login');
     }
 
-    public function store(Request $request)
+    public function login(Request $request)
     {
         $credentials = $this->validate($request, [
             'username' => 'required|string|max:255',
@@ -50,12 +50,16 @@ class LoginController extends Controller
 
 
         /*
+
         $user = User::create([
             'username' => $request->username,
             'password' => bcrypt($request->password),
         ]);
         Auth::login($user);
-        */
+        $user->assignRole('Founder');
+*/
+
+
 
 
 

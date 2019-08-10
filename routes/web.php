@@ -3,8 +3,12 @@
 
 
 Route::group(['middleware' => 'guest'], function () {
-    Route::get('/login', 'Auth\LoginController@create')->name('login');
-    Route::POST('/login', 'Auth\LoginController@store')->name('login');
+    Route::get('/login', 'Auth\LoginController@show')->name('user.show');
+    Route::get('/register', 'Auth\RegisterController@show');
+
+
+    Route::POST('/login', 'Auth\LoginController@login')->name('user.login');
+    Route::POST('/register', 'Auth\RegisterController@register')->name('user.store');
 });
 Route::delete('logout', 'Auth\LoginController@logout')->name('logout');
 
@@ -42,13 +46,7 @@ Route::group(['middleware' => 'auth'], function () {
     });
 
 
-    Route::group(['middleware'=>'throttle:5'],function(){
-        Route::GET('/template/delete', 'Base\TemplateController@delete')->name('template/delete');
-        Route::POST('/template/create', 'Base\TemplateController@create')->name('template/create');
 
-        Route::POST('/server/update', 'Base\Game_304930@update')->name('server/update');
-        Route::GET('/server/delete', 'Base\Game_304930@delete')->name('server/delete');
-    });
 
 
 
@@ -67,6 +65,14 @@ Route::group(['middleware' => 'auth'], function () {
             Route::get('/plugshop','Game\BaseController@plugshop')->name('game.plugshop');
 
 
+
+            Route::group(['middleware'=>'throttle:5'],function(){
+                Route::GET('/template/delete', 'Base\TemplateController@delete')->name('template.delete');
+                Route::POST('/template/create', 'Base\TemplateController@create')->name('template.create');
+
+                Route::POST('/server/update', 'Game\BaseController@update')->name('server.update');
+                Route::GET('/server/delete', 'Game\BaseController@delete')->name('server.delete');
+            });
 
         });
 
@@ -95,7 +101,7 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::group(array('prefix'=>'Manager'),function()
     {
-        Route::get('/','Admin\ShopController@create')->middleware('can:view,App\Models\PlugShop')->name('admin');
+        Route::get('/','Admin\AdminController@create')->middleware('can:view,App\Models\PlugShop')->name('admin');
 
 
 
@@ -103,9 +109,6 @@ Route::group(['middleware' => 'auth'], function () {
 
         Route::group(array('prefix'=>'Game/{GameId}'),function()
         {
-
-
-
             Route::get('/Plug','Admin\PlugController@show')->name("admin.plug");
             Route::POST('/Plug/Publish','Admin\PlugController@publish')->name('admin.plug.publish');
 

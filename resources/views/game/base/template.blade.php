@@ -75,16 +75,16 @@
                                     <tbody>
                                     @foreach ($templates as $template)
                                         <tr>
-                                            <td id="{{$template->uuid}}">{{$template->alias}}</td>
+                                            <td id="{{$template->template_uuid}}">{{$template->alias}}</td>
                                             <td>0</td>
                                             <td>0 <a class="btn btn-xs btn-success pull-right">修改</a></td>
                                             <td>{{$template->count_plug}}
                                                 <button id="plug_set" class="btn btn-default btn-xs pull-right"
                                                         data-toggle="modal" data-target="#PlugSet"
-                                                        data-uuid="{{$template->uuid}}">修改
+                                                        data-uuid="{{$template->template_uuid}}">修改
                                                 </button>
                                             </td>
-                                            <td><a href="{{route('template/delete').'?template_uuid='.$template->uuid}}" class="btn btn-xs btn-danger pull-right">删除</a></td>
+                                            <td><a href="{{route('template.delete',$gameid).'?template_uuid='.$template->template_uuid}}" class="btn btn-xs btn-danger pull-right">删除</a></td>
                                         </tr>
                                     @endforeach
                                     </tbody>
@@ -110,9 +110,9 @@
                         <h4 class="modal-title text-center" id="myModalLabel">添加Template</h4>
                     </div>
                     <div class="modal-body">
-                        <form class="form-horizontal" action="{{route('template/create')}}" method="POST" role="form">
+                        <form class="form-horizontal" action="{{route('template.create',$gameid)}}" method="POST" role="form">
                             {{ csrf_field() }}
-                            <input type="hidden" name="game" value="{{$game}}">
+
                             <div class="form-group">
                                 <label class="col-xs-2 control-label">别名</label>
                                 <div class="col-xs-8">

@@ -60,7 +60,7 @@
                                     <td id="name">{{$plug->name}}</td>
                                     <td>{{$plug->type}}</td>
                                     <td>{{$plug->description}}</td>
-                                    <td>{{$plug->owner}}</td>
+                                    <td>{{$plug->owner->name}}</td>
                                     <td id="price">@if($plug->price == 0)免费
                                         @else{{$plug->price}} RMB
                                         @endif

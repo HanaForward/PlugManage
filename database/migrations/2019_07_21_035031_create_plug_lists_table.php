@@ -25,7 +25,7 @@ class CreatePlugListsTable extends Migration
 
             $table->string('plug_uuid',36)->unique();
 
-            $table->unsignedBigInteger('plug_id')->unsigned()->unique();;
+            $table->unsignedBigInteger('plug_id')->unsigned();
             $table->foreign('plug_id')->references('id')->on('plug_shops')->onDelete('CASCADE')->onUpdate('RESTRICT');
 
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));

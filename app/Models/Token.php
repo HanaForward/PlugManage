@@ -25,7 +25,9 @@ class Token extends Model
 
     public function user()
     {
-        return $this->belongsTo('Models\User');
+
+        return $this->hasOne(User::class, 'user_id', 'id');
+
     }
 
     public function getAuthPassword()

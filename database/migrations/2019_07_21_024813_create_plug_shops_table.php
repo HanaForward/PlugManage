@@ -21,7 +21,7 @@ class CreatePlugShopsTable extends Migration
             $table->foreign('user_id')->references('id')->on('users')->onDelete('CASCADE')->onUpdate('RESTRICT');
 
             $table->unsignedBigInteger('game_id')->unsigned();
-            $table->foreign('game_id')->references('id')->on('games')->onDelete('SETNULL')->onUpdate('RESTRICT');
+            $table->foreign('game_id')->references('id')->on('games')->onDelete('CASCADE')->onUpdate('RESTRICT');
 
             $table->string('name',32);
             $table->unsignedInteger('price')->nullable();

@@ -22,8 +22,8 @@
                                     <i class="fa fa-comments fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">26</div>
-                                    <div>新评论!</div>
+                                    <div class="huge">0</div>
+                                    <div>新消息</div>
                                 </div>
                             </div>
                         </div>
@@ -45,8 +45,8 @@
                                     <i class="fa fa-tasks fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">12</div>
-                                    <div>个服务器</div>
+                                    <div class="huge">0</div>
+                                    <div>服务器</div>
                                 </div>
                             </div>
                         </div>
@@ -68,7 +68,7 @@
                                     <i class="fa fa-shopping-cart fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">124</div>
+                                    <div class="huge">0</div>
                                     <div>笔交易</div>
                                 </div>
                             </div>
@@ -91,7 +91,7 @@
                                     <i class="fa fa-support fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">13</div>
+                                    <div class="huge">0</div>
                                     <div>新回复</div>
                                 </div>
                             </div>
