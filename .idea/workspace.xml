@@ -1,35 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="17dfb580-964f-4273-8028-8030d130e39a" name="Default Changelist" comment="Admin">
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/create.blade.php" afterDir="false" />
+    <list default="true" id="17dfb580-964f-4273-8028-8030d130e39a" name="Default Changelist" comment="Updata and fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/Game/Game_304930.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/Game/Game_304930.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Base/ShopController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Base/ShopController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Base/TemplateController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Base/TemplateController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Base/TokenController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Base/TokenController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/PlugList.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/PlugList.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/PlugShop.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/PlugShop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Server.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Server.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Template.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Template.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Token.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Token.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_07_21_024813_create_plug_shops_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_07_21_024813_create_plug_shops_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_07_21_035031_create_plug_lists_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_07_21_035031_create_plug_lists_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/base/plug.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/base/plug.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/base/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/base/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/game/base/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/game/base/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/game/base/plug_shop.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/game/base/plug_shop.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/game/base/template.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/game/base/template.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/_header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/users/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,8 +48,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/Game/Game_304930.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="701">
-              <caret line="148" column="8" selection-start-line="148" selection-start-column="8" selection-end-line="148" selection-end-column="8" />
+            <state relative-caret-position="152">
+              <caret line="82" column="43" lean-forward="true" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -326,39 +299,6 @@
             <path>
               <item name="PlugManage" type="b2602c69:ProjectViewProjectNode" />
               <item name="PlugManage" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="Api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PlugManage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PlugManage" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="Api" type="462c0819:PsiDirectoryNode" />
-              <item name="Game" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PlugManage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PlugManage" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="Base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PlugManage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PlugManage" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="Game" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PlugManage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PlugManage" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -377,26 +317,6 @@
               <item name="PlugManage" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PlugManage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PlugManage" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PlugManage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PlugManage" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PlugManage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PlugManage" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -478,7 +398,7 @@
       <workItem from="1565027703869" duration="1593000" />
       <workItem from="1565082900382" duration="4537000" />
       <workItem from="1565096637089" duration="2523000" />
-      <workItem from="1565134610753" duration="57408000" />
+      <workItem from="1565134610753" duration="58421000" />
     </task>
     <task id="LOCAL-00001" summary="Buy">
       <created>1563973502204</created>
@@ -536,18 +456,31 @@
       <option name="project" value="LOCAL" />
       <updated>1565386348088</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Updata and fix">
+      <created>1565425964715</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1565425964715</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Updata and fix">
+      <created>1565426196666</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1565426196666</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="323196000" />
+    <option name="totallyTimeSpent" value="324209000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="593" y="179" width="1934" height="932" extended-state="0" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.33315566" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.3335112" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="0" weight="0.3286334" />
       <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49946696" weight="0.329718" />
@@ -618,7 +551,8 @@
     <MESSAGE value="Plug Strat" />
     <MESSAGE value="Done" />
     <MESSAGE value="Admin" />
-    <option name="LAST_COMMIT_MESSAGE" value="Admin" />
+    <MESSAGE value="Updata and fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updata and fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -976,16 +910,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Game/BaseController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="121" column="76" selection-start-line="121" selection-start-column="70" selection-end-line="121" selection-end-column="76" />
-          <folding>
-            <element signature="e#45#66#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/game/base/template.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="568">
@@ -1007,6 +931,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Game/BaseController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="121" column="76" selection-start-line="121" selection-start-column="70" selection-end-line="121" selection-end-column="76" />
+          <folding>
+            <element signature="e#45#66#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/Template.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -1016,8 +950,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/Game/Game_304930.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="701">
-          <caret line="148" column="8" selection-start-line="148" selection-start-column="8" selection-end-line="148" selection-end-column="8" />
+        <state relative-caret-position="152">
+          <caret line="82" column="43" lean-forward="true" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
         </state>
       </provider>
     </entry>
