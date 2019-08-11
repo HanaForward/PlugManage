@@ -19,11 +19,8 @@ class ShopController extends Controller
     public function buy(Request $request)
     {
         $pay_channel = $request->pay_channel;
-
         $Plug = PlugShop::where('uuidShort',$request->uuid)->first();
-
         $exist = PlugList::where(['plug_id' => $Plug->id,'user_id' => Auth::id()])->first();
-
         if($exist != null)
         {
             session()->flash('danger', '已被购买,无法重复购买!');
@@ -50,7 +47,6 @@ class ShopController extends Controller
                     $order->state = true;
                     $order->save();
                 }
-
                 PlugList::create([
                     'user_id' => $User->id,
                     'game_id' => $Plug->game_id,

@@ -49,7 +49,7 @@
                                 <td>{{$plug->plug->name}}</td>
                                 <td>{{$plug->plug->type}}</td>
                                 <td>{{$plug->plug->description}}</td>
-                                <td>{{$plug->owner->name}}</td>
+                                <td>{{$plug->plug->owner->name}}</td>
                                 <td>
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-xs btn-success active">开启</button>
@@ -74,18 +74,6 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
 @stop
 
 @extends('layouts._footer')

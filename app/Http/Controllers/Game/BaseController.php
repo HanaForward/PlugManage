@@ -85,40 +85,30 @@ class BaseController extends Controller
 
     public function template($Gameid = null)
     {
-
         $Json =Array();
         $user_id = Auth::id();
-
         $Game = Games::where([
             'gameid' => $Gameid,
         ])->first();
-
-
         $plug_list = PlugList::where([
                 'user_id' => Auth::id(),
                 'game_id' => $Game->id,
             ]
         )->get();
-
-
-
         $template = Template::where(['user_id' => Auth::id(), 'game_id' => $Game->id])->get();
 
-        /*
+
+        //插件启用数量统计
         foreach ($template as $arr)
         {
-
             $count = PlugStart::where([
                 'user_id' => $user_id,
-                'template_uuid'=> $arr->uuid,
+                'template_uuid'=> $arr->template_uuid,
             ])->count();
-
             $arr = Arr::add($arr,'count_plug',$count);
-
             array_push($Json,$arr);
         }
 
-        */
         return view('game.base.template', ['templates' => $template, 'gameid' => $Gameid , "plug_list" => $plug_list]);
     }
 
