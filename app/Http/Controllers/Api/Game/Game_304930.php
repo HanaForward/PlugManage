@@ -23,36 +23,27 @@ class Game_304930 extends Controller
 
     public function login(Request $request,$gameid = null)
     {
-
+        $Json =Array();
+        $user_id = Auth::id();
+        $uuid = $request->UUID;
+        $Template_Id = null;
+        $Plug = Array();
 
         $Game = Games::where([
             'gameid' => $gameid
         ])->first();
 
 
-        $Json =Array();
-
-        $user_id = Auth::id();
-        $uuid = $request->UUID;
-
-        $Template_Id = null;
-        $Plug = Array();
-
         if (!is_null($uuid)) {
             $Server = Server::where([
                 'user_id' => $user_id,
                 'server_uuid' => $uuid,
             ])->first();
-
             if (!is_null($Server)) {
                 $Template = Template::find($Server->template_id);
 
                 if (!is_null($Template)) {
-
                     $Template_Id = $Template->template_uuid; //添加模板ID
-
-
-                    //$Json = Arr::add($Json,'Template',$Server->template_uuid);
 
                     $PlugStart = PlugStart::where([
                         'user_id' => $user_id,
@@ -66,12 +57,13 @@ class Game_304930 extends Controller
                         foreach ($PlugStart as $arr)
                         {
                             $data = array();
-                            $plug = $arr->plug();
+                            $tem_plug = $arr->pluglist;
 
-                            $data = Arr::add($data,'uuidShort',$plug->uuidShort);
+                            $plug = PlugShop::find($tem_plug->plug_id);
+
+                            $data = Arr::add($data,'uuid',$tem_plug->plug_uuid);
                             $data = Arr::add($data,'name',$plug->name);
                             $data = Arr::add($data,'switch',$arr->switch);
-
                             array_push($Plug,$data);
                         }
                     }
@@ -102,42 +94,33 @@ class Game_304930 extends Controller
         $version = $request->version;
 
 
-       $PlugShop = PlugShop::where([
-            'uuidShort' => $uuidShort,
+        $PlugList = PlugList::where([
+            'plug_uuid' => $uuidShort,
+            'user_id' => $user_id,
         ])->first();
 
-        if(is_null($PlugShop))
+        if(is_null($PlugList))
         {
             return json_decode("无效的uuidShort");
         }
 
-        $Plug_Id = $PlugShop->id;
-
-        $PlugList = PlugList::where([
-            'plug_id' => $Plug_Id,
-            'user_id' =>$user_id,
-        ])->first();
-        if(is_null($PlugList))
-        {
-            return json_decode("检测到越权访问,已记录!");
-        }
 
         if(is_null($version))
             $version = "";
 
         $PlugData = PlugStorage::where([
-            'plug_id' => $Plug_Id,
+            'plug_id' => $PlugList->plug_id,
         ])->first();
 
-        $Data = $PlugData->data;
+        $Data =base64_decode( $PlugData->data);
 
-
-        $filename = $PlugShop->name.".dll";
+        $filename = $uuidShort.".dll";
         $headers = [
             'Content-Encoding' => 'UTF-8',
             'Content-Type' => 'application/x-msdownload',
             'Content-Disposition' => "attachment; filename=\"$filename\"",
         ];
+
 
 
         response()->stream(function () use ($Data) {

@@ -13,7 +13,7 @@ class PlugList extends Model
     ];
 
     protected $hidden = [
-        'user_id', 'plug_id','game_id',
+        'user_id', 'plug_id','game_id','plug_uuid',
     ];
 
 

@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Models\Games;
 use App\Models\PlugShop;
+use App\Models\PlugStorage;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
@@ -51,10 +52,11 @@ class PlugController extends Controller
         $Plug_Price = $request->price;
         $Plug_Description = $request->description;
         $file = $request->file('plug_data');
-        $fileExtension = $file->getClientOriginalExtension();
+
+        $realPath = $file->getRealPath();
 
 
-        PlugShop::create([
+        $PlugShop = PlugShop::create([
             'user_id' => $user_id,
             'game_id' => $Game,
             'uuidShort' => DB::raw('left(uuid(),8)'),
@@ -63,6 +65,15 @@ class PlugController extends Controller
             'description' =>  $request->description,
         ]);
 
-        return $fileExtension;
+
+        $plug_data = base64_encode(fread(fopen($realPath, "r"), $file->getSize()));
+
+        PlugStorage::create([
+            'plug_id' => $PlugShop->id,
+            'version' => 'releases',
+            'data'=>$plug_data,
+        ]);
+        return redirect()->back();
+
     }
 }

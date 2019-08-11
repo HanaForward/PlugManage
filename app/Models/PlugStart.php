@@ -19,9 +19,9 @@ class PlugStart extends Model
     ];
 
 
-    public function plug()
+    public function pluglist()
     {
-        return PlugShop::find($this->plug);
+        return $this->belongsTo(PlugList::class,'plug','id');
     }
 
 }

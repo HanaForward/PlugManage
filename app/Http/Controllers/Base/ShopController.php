@@ -22,14 +22,14 @@ class ShopController extends Controller
 
         $Plug = PlugShop::where('uuidShort',$request->uuid)->first();
 
-        $exist = PlugList::where(['id' => $Plug->id,'user_id' => Auth::id()])->first();
-
+        $exist = PlugList::where(['plug_id' => $Plug->id,'user_id' => Auth::id()])->first();
 
         if($exist != null)
         {
             session()->flash('danger', '已被购买,无法重复购买!');
             return redirect()->back();
         }
+
         if($pay_channel == 1)
         {
             $User = User::find(Auth::id());
