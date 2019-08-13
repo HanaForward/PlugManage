@@ -54,7 +54,6 @@
                             <tr>
                                 <th style="width: 80px">uuidShort</th>
                                 <th>插件名</th>
-                                <th>类型</th>
                                 <th>说明</th>
                                 <th>价格</th>
                                 <th>管理</th>
@@ -63,14 +62,13 @@
                             <tbody>
                             @foreach ($Plugs as $plug)
                                 <tr>
-                                    <td id="uuid">{{$plug->uuidShort}}</td>
-                                    <td id="name">{{$plug->name}}</td>
-                                    <td>{{$plug->type}}</td>
-                                    <td>{{$plug->description}}</td>
-                                    <td id="price">{{$plug->price}} RMB</td>
+                                    <td id="plug_uuidShort">{{$plug->uuidShort}}</td>
+                                    <td id="plug_name">{{$plug->name}}</td>
+                                    <td id="plug_description">{{$plug->description}}</td>
+                                    <td id="plug_price">{{$plug->price}}</td>
                                     <td>
-                                        <button id="buy" class="btn btn-success btn-xs" data-toggle="modal"
-                                                data-target="#Modal">修改
+                                        <button id="change" class="btn btn-success btn-xs" data-toggle="modal"
+                                                data-target="#PlugUpdate">修改
                                         </button>
                                     </td>
                                 </tr>
@@ -87,13 +85,63 @@
         </div>
     </div>
 
+    <div class="modal fade" id="PlugUpdate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                    <h4 class="text-center" id="myModalLabel">插件修改</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal" action="{{route('admin.plug.updata',$game_id)}}" method="POST">
+                        {{ csrf_field() }}
+
+                        <input name="uuidShort" type="hidden" class="form-control" id="uuidShort" >
+
+                        <div class="form-group">
+                            <label for="firstname" class="col-xs-2 control-label">插件名</label>
+                            <div class="col-xs-8">
+                                <input name="name" type="text" class="form-control" id="name">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="firstname" class="col-xs-2 control-label">价格</label>
+                            <div class="col-xs-8">
+                                <input name="price" type="text" class="form-control" id="price">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="firstname" class="col-xs-2 control-label">描述</label>
+                            <div class="col-xs-8">
+                                <input name="description" type="text" class="form-control" id="description">
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="text-center">
+                            <span id="returnMessage" class="glyphicon"> </span>
+                            <button type="button" class="btn btn-default right" data-dismiss="modal">取消修改</button>
+                            <button id="submitBtn" type="button" class="btn btn-primary" onclick="submit()">保存修改</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
     <div class="modal fade" id="Publish" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                                 aria-hidden="true">&times;</span></button>
-                    <h4 class="text-center" id="myModalLabel">发布插件</h4>
+                    <h4 class="text-center" id="myModalLabel">插件发布</h4>
                 </div>
                 <div class="modal-body">
                     <form class="form-horizontal" action="{{route('admin.plug.publish',$game_id)}}" method="POST" enctype="multipart/form-data">
@@ -101,27 +149,27 @@
                         <div class="form-group">
                             <label for="firstname" class="col-xs-2 control-label">插件名</label>
                             <div class="col-xs-8">
-                                <input name="name" type="text" class="form-control" id="plug_name">
+                                <input name="name" type="text" class="form-control" >
                             </div>
                         </div>
 
                         <div class="form-group">
                             <label for="firstname" class="col-xs-2 control-label">价格</label>
                             <div class="col-xs-8">
-                                <input name="price" type="text" class="form-control" id="plug_price">
+                                <input name="price" type="text" class="form-control" >
                             </div>
                         </div>
 
                         <div class="form-group">
                             <label for="firstname" class="col-xs-2 control-label">描述</label>
                             <div class="col-xs-8">
-                                <input name="description" type="text" class="form-control" id="plug_name">
+                                <input name="description" type="text" class="form-control">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="firstname" class="col-xs-2 control-label">提交</label>
                             <div class="col-xs-8">
-                                <input name="plug_data" type="file" id="plug_data" required>
+                                <input name="plug_data" type="file" required>
                             </div>
                         </div>
                         <hr>
@@ -136,6 +184,25 @@
         </div>
     </div>
 
+    <script language="JavaScript">
+        $("tr").each(function () {
+            $("#change", this).click(function () {
+                var table = $(this).parents("tr");
+
+                var uuid = table.children('td#plug_uuidShort').html();
+                var name = table.children('td#plug_name').html();
+                var price = table.children('td#plug_price').html();
+                var des = table.children('td#plug_description').html();
+
+
+                $("#uuidShort").val(uuid);
+                $("#name").val(name);
+                $("#price").val(price);
+                $("#description").val(des);
+            });
+        });
+
+    </script>
 
 
 @stop

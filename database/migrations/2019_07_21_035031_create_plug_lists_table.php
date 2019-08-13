@@ -30,8 +30,12 @@ class CreatePlugListsTable extends Migration
 
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
         });
+
+        DB::statement("ALTER TABLE plug_lists ADD UNIQUE KEY(user_id, plug_id)");
+
         Schema::enableForeignKeyConstraints();
     }
+
 
     /**
      * Reverse the migrations.

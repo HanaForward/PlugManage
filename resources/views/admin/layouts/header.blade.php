@@ -81,7 +81,7 @@
                                     <a>{{$Game->GameName}}</a>
                                     <ul class="nav nav-third-level">
                                         <li> <a href="{{route('admin.plug',$Game->GameId)}}">插件管理</a></li>
-                                        <li> <a href="/Storage?Game={{$Game->GameId}}">版本管理</a></li>
+                                        <li> <a href="{{route('admin.storage',$Game->GameId)}}">版本管理</a></li>
                                     </ul>
                                 </li>
                             @endforeach

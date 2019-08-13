@@ -101,16 +101,26 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::group(array('prefix'=>'Manager'),function()
     {
-        Route::get('/','Admin\AdminController@create')->middleware('can:view,App\Models\PlugShop')->name('admin');
-
+        Route::get('/','Admin\AdminController@create')->middleware('can:view,App\Models\PlugShop')->name('admin.index');
 
 
 
 
         Route::group(array('prefix'=>'Game/{GameId}'),function()
         {
+
+
+
             Route::get('/Plug','Admin\PlugController@show')->name("admin.plug");
+            Route::POST('/Plug/Updata','Admin\PlugController@updata')->name("admin.plug.updata");
             Route::POST('/Plug/Publish','Admin\PlugController@publish')->name('admin.plug.publish');
+
+            Route::get('/Storage','Admin\StorageController@show')->name('admin.storage');
+            Route::POST('/Storage/Publish','Admin\StorageController@publish')->name('admin.storage.publish');
+            Route::POST('/Storage/Updata','Admin\StorageController@updata')->name('admin.storage.updata');
+
+
+
 
         });
 

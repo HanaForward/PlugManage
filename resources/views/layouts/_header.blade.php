@@ -45,7 +45,7 @@
 
 
         <div class="navbar-header">
-            <a class="pull-right btn btn-default" href="{{route('admin')}}" >开发者中心</a>
+            <a class="pull-right btn btn-default" href="{{route('admin.index')}}" >开发者中心</a>
         </div>
 
 

@@ -17,8 +17,8 @@ class PlugController extends Controller
     /**
      * 更新权限浏览页面。
      *
-     * @param  Request  $request
-     * @param  Post  $post
+     * @param Request $request
+     * @param Post $post
      * @return Response
      * @throws \Illuminate\Auth\Access\AuthorizationException
      */
@@ -27,7 +27,8 @@ class PlugController extends Controller
         $user = Auth::user();
         $this->authorize('update', $user);
     }
-    public function show(Request $request,$Gameid =null)
+
+    public function show(Request $request, $Gameid = null)
     {
         $user_id = Auth::id();
         $Game = Games::where([
@@ -37,11 +38,11 @@ class PlugController extends Controller
             'user_id' => $user_id,
             'game_id' => $Game,
         ])->paginate(15);
-        return view('admin.base.plug',['Plugs'=> $Plugs,'game_id' => $Gameid]);
+        return view('admin.base.plug', ['Plugs' => $Plugs, 'game_id' => $Gameid]);
     }
 
 
-    public function publish(Request $request,$Gameid =null)
+    public function publish(Request $request, $Gameid = null)
     {
         $user_id = Auth::id();
         $Game = Games::where([
@@ -62,7 +63,7 @@ class PlugController extends Controller
             'uuidShort' => DB::raw('left(uuid(),8)'),
             'name' => $request->name,
             'price' => $request->price,
-            'description' =>  $request->description,
+            'description' => $request->description,
         ]);
 
 
@@ -71,9 +72,36 @@ class PlugController extends Controller
         PlugStorage::create([
             'plug_id' => $PlugShop->id,
             'version' => 'releases',
-            'data'=>$plug_data,
+            'data' => $plug_data,
         ]);
         return redirect()->back();
+
+    }
+
+    public function updata(Request $request, $Gameid = null)
+    {
+        $user_id = Auth::id();
+        $Game = Games::where([
+            "gameid" => $Gameid,
+        ])->first()->id;
+
+        $PlugShop = PlugShop::where([
+            'user_id' => $user_id,
+            'uuidShort' => $request->uuidShort,
+        ])->first();
+
+
+        $PlugShop->name = $request->name;
+        $PlugShop->price = $request->price;
+        $PlugShop->description = $request->description;
+
+        if ($PlugShop->save()) {
+            session()->flash('success', '修改成功');
+            return redirect()->back();
+        }
+        session()->flash('danger', '修改失败');
+        return redirect()->back();
+
 
     }
 }

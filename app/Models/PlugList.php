@@ -9,7 +9,7 @@ class PlugList extends Model
     public $timestamps = false;
 
     protected $fillable = [
-       'user_id', 'plug_id','game_id','created_at','plug_uuid'
+       'user_id', 'plug_id','game_id','created_at','plug_uuid',
     ];
 
     protected $hidden = [
