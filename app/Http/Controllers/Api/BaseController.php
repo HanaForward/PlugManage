@@ -13,4 +13,9 @@ class BaseController extends Controller
         $user = Auth::id();
         return $user;
     }
+    public function token()
+    {
+        return 'token无效或错误!';
+
+    }
 }

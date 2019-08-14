@@ -53,13 +53,9 @@ class BaseController extends Controller
         $template_uuid =  $request->template_uuid;
 
         $user_id = Auth::id();
-
         $Game= Games::where([
             "gameid" => $Gameid,
         ])->first()->id;
-
-
-
         $Server = Server::where([
             'user_id' =>$user_id,
             'game_id' => $Game,
@@ -71,7 +67,11 @@ class BaseController extends Controller
             'template_uuid' => $template_uuid
         ])->first();
 
-        $Server->template_id = $Template->id;
+        if(is_null($Template))
+            $Server->template_id = null;
+        else
+            $Server->template_id = $Template->id;
+
         if($Server->save())
             session()->flash('success', '修改成功!');
         return redirect()->back();

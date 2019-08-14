@@ -13,7 +13,10 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:web-api')->group(function () {
+Route::get('/token','Api\BaseController@token')->name('token.error');
+
+
+Route::group(['middleware'=>'auth:web-api'],function (){
     Route::get('/info','Api\BaseController@info');
 
 
@@ -29,4 +32,9 @@ Route::middleware('auth:web-api')->group(function () {
 
     });
 });
+
+
+
+
+
 

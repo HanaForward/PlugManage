@@ -79,6 +79,7 @@
                             <label class="col-xs-2 control-label">模板</label>
                             <div class="col-xs-8" id="app">
                                 <select  name="template_uuid">
+                                    <option></option>
                                     <option v-for="item in newsList" v-bind:value="item.template_uuid">
                                         @{{item.alias}}(@{{item.template_uuid}})
                                     </option>
