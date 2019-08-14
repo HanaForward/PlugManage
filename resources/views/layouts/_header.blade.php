@@ -57,6 +57,12 @@
                     <i class="fa fa-user fa-fw"></i>{{ Auth::user()->username }} <b class="caret"></b>
                 </a>
                 <ul class="dropdown-menu dropdown-user">
+
+                    @can('manage_users')
+                        <a href="{{ url(config('administrator.uri')) }}"><i class="fa fa-tachometer-alt fa-fw"></i> 管理后台</a>
+                    @endcan
+
+
                     <li><a href="#"><i class="fa fa-user fa-fw"></i> 账户</a>
                     </li>
                     <li><a href="#"><i class="fa fa-gear fa-fw"></i> 设置</a>
