@@ -119,6 +119,11 @@ Route::group(['middleware' => 'auth'], function () {
             Route::POST('/Storage/Publish','Admin\StorageController@publish')->name('admin.storage.publish');
             Route::POST('/Storage/Updata','Admin\StorageController@updata')->name('admin.storage.updata');
 
+            Route::get('/librarie','Admin\LibrarieController@show')->name("admin.librarie");
+            Route::POST('/librarie/Publish','Admin\LibrarieController@publish')->name("admin.librarie.publish");
+            Route::POST('/librarie/Updata','Admin\LibrarieController@updata')->name("admin.librarie.updata");
+
+
 
 
 
@@ -134,7 +139,5 @@ Route::group(['middleware' => 'auth'], function () {
 
 
 });
-
-
 
 

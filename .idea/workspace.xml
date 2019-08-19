@@ -1,14 +1,223 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="17dfb580-964f-4273-8028-8030d130e39a" name="Default Changelist" comment="Fix and Updata">
-      <change afterPath="$PROJECT_DIR$/config/administrator.php" afterDir="false" />
+    <list default="true" id="17dfb580-964f-4273-8028-8030d130e39a" name="Default Changelist" comment="集成 administrator">
+      <change afterPath="$PROJECT_DIR$/config/administrator/users.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/accounting.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/admin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/base.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/ckeditor/CHANGES.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/ckeditor/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/ckeditor/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/ckeditor/bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/ckeditor/ckeditor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/ckeditor/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/ckeditor/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/ckeditor/contents.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/ckeditor/lang/en-au.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/ckeditor/lang/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/ckeditor/lang/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/ckeditor/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/ckeditor/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/history/native.history.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery-migrate.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/customscroll/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/customscroll/customscroll.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/customscroll/jquery.customscroll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-af.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-ar-DZ.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-be.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-bs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-cy-GB.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-en-AU.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-en-GB.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-en-NZ.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-eo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-fo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-fr-CA.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-fr-CH.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-hi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-hy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-is.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-ka.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-kk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-ky.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-lb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-mk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-ml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-ms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-nl-BE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-nn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-pt-BR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-rm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-sr-SR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-ta.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-tj.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-zh-CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-zh-HK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-zh-TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/jquery-1.8.2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/jquery-ui-1.10.3.custom.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/jquery-ui-timepicker-addon.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/jquery.lw-colorpicker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/jquery.ui.slider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-af.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-pt-BR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-zh-CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-zh-TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/component.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/release.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2-spinner.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2.jquery.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_en.js.template" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_is.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_mk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_pt-BR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_pt-PT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_ua.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_zh-CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_zh-TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2x2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/markdown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/qrcode.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/settings.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/base/librarie.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/shared/_messages.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/PlugManage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PlugManage.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/PlugController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/PlugController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/StorageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/StorageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/Game/Game_304930.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/Game/Game_304930.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Base/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Base/IndexController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/PlugStorage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/PlugStorage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/administrator.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/administrator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/base/storage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/base/storage.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/game/base/plug_shop.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/game/base/plug_shop.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/_header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/auth.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/auth.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,44 +232,33 @@
     </execution>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/summerblue/administrator/src/config/administrator.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/LibrarieController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+            <state relative-caret-position="644">
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
+              <folding>
+                <element signature="e#47#79#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/app.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/administrator.php">
+        <entry file="file://$PROJECT_DIR$/app/Models/LibrarieStorages.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-572">
-              <caret line="74" column="63" selection-start-line="74" selection-start-column="63" selection-end-line="74" selection-end-column="63" />
+            <state relative-caret-position="114">
+              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/_header.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/base/librarie.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_06_091626_seed_roles_and_permissions_data.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="22" column="51" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="51" />
+            <state relative-caret-position="511">
+              <caret line="207" column="16" selection-start-line="207" selection-start-column="16" selection-end-line="207" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -73,6 +271,8 @@
       <find>guards</find>
       <find>providers</find>
       <find>Models\PlugShop</find>
+      <find>zip</find>
+      <find>game_id</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -86,57 +286,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Plug/PlugController.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_07_21_024813_create_plug_shops_table.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" />
-        <option value="$PROJECT_DIR$/app/Models/Token.php" />
-        <option value="$PROJECT_DIR$/app/Models/User.php" />
-        <option value="$PROJECT_DIR$/app/Models/PlugShop.php" />
-        <option value="$PROJECT_DIR$/app/Models/Order.php" />
-        <option value="$PROJECT_DIR$/resources/views/auth/create.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" />
-        <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
-        <option value="$PROJECT_DIR$/app/Models/Template.php" />
-        <option value="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" />
-        <option value="$PROJECT_DIR$/app/Policies/TokenPolicy.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Base/TokenController.php" />
-        <option value="$PROJECT_DIR$/app/Models/Games.php" />
-        <option value="$PROJECT_DIR$/resources/views/users/edit.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/users/show.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/base/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/base/token.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Base/IndexController.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/base/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/game/base/plug_shop.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/game/base/template.blade.php" />
-        <option value="$PROJECT_DIR$/storage/framework/views/d3c3a9c4ade541e03a75c74ff962817b13db949d.php" />
         <option value="$PROJECT_DIR$/resources/views/game/layouts/game_header.blade.php" />
-        <option value="$PROJECT_DIR$/app/Models/PlugStorage.php" />
         <option value="$PROJECT_DIR$/app/Models/Server.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Base/TemplateController.php" />
         <option value="$PROJECT_DIR$/app/Models/PlugStart.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/Game/Game_304930.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Base/ShopController.php" />
         <option value="$PROJECT_DIR$/resources/views/game/base/database.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/game/base/plug_list.blade.php" />
         <option value="$PROJECT_DIR$/app/Models/PlugList.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/storage.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_07_21_035031_create_plug_lists_table.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/layouts/header.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/base/plug.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/base/storage.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_08_05_063757_create_plug_storages_table.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/PlugController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/StorageController.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/BaseController.php" />
-        <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" />
         <option value="$PROJECT_DIR$/resources/views/game/base/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Game/BaseController.php" />
         <option value="$PROJECT_DIR$/config/administrator.php" />
+        <option value="$PROJECT_DIR$/app/Models/User.php" />
+        <option value="$PROJECT_DIR$/config/administrator/users.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/PlugController.php" />
+        <option value="$PROJECT_DIR$/app/Models/PlugStorage.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/StorageController.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/base/storage.blade.php" />
+        <option value="$PROJECT_DIR$/config/cache.php" />
+        <option value="$PROJECT_DIR$/config/app.php" />
+        <option value="$PROJECT_DIR$/resources/views/shared/_messages.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
+        <option value="$PROJECT_DIR$/app/helpers.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/auth.blade.php" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/resources/views/game/base/plug_shop.blade.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/_header.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" />
+        <option value="$PROJECT_DIR$/resources/views/auth/create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/auth/register.blade.php" />
+        <option value="$PROJECT_DIR$/routes/api.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/layouts/header.blade.php" />
+        <option value="$PROJECT_DIR$/app/Models/LibraieStorage.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/Game/Game_304930.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_08_19_163117_create_libraie_storages_table.php" />
+        <option value="$PROJECT_DIR$/app/Models/LibrariesStorage.php" />
+        <option value="$PROJECT_DIR$/app/Models/Librarie.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_08_19_185043_create_librarie_storages_table.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Base/IndexController.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Models/LibrarieStorages.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/LibrarieController.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/base/librarie.blade.php" />
       </list>
     </option>
   </component>
@@ -241,11 +441,13 @@
       <path value="$PROJECT_DIR$/vendor/viacreative/sudo-su" />
       <path value="$PROJECT_DIR$/vendor/summerblue/administrator" />
       <path value="$PROJECT_DIR$/vendor/ckeditor/ckeditor" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
+      <path value="$PROJECT_DIR$/vendor/mews/captcha" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="43" />
-    <option name="y" value="-17" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1934" />
     <option name="height" value="814" />
   </component>
@@ -254,7 +456,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -265,7 +466,78 @@
             <path>
               <item name="PlugManage" type="b2602c69:ProjectViewProjectNode" />
               <item name="PlugManage" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PlugManage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PlugManage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PlugManage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PlugManage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PlugManage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PlugManage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PlugManage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PlugManage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PlugManage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PlugManage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Api" type="462c0819:PsiDirectoryNode" />
+              <item name="Game" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PlugManage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PlugManage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PlugManage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PlugManage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PlugManage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PlugManage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PlugManage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PlugManage" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PlugManage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PlugManage" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PlugManage" type="b2602c69:ProjectViewProjectNode" />
@@ -283,18 +555,32 @@
               <item name="PlugManage" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PlugManage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PlugManage" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PlugManage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PlugManage" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/config" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/config/administrator" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -302,6 +588,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="O:\Laragon\www\PlugManage\config\administrator" />
       <recent name="O:\Laragon\www\PlugManage\config" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -369,7 +656,10 @@
       <workItem from="1565096637089" duration="2523000" />
       <workItem from="1565134610753" duration="71810000" />
       <workItem from="1565503118685" duration="7816000" />
-      <workItem from="1565585844762" duration="32326000" />
+      <workItem from="1565585844762" duration="50498000" />
+      <workItem from="1565917550486" duration="7453000" />
+      <workItem from="1566036497521" duration="10543000" />
+      <workItem from="1566194773744" duration="12718000" />
     </task>
     <task id="LOCAL-00001" summary="Buy">
       <created>1563973502204</created>
@@ -504,18 +794,25 @@
       <option name="project" value="LOCAL" />
       <updated>1565772901863</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="集成 administrator">
+      <created>1565780339112</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1565780339112</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="377740000" />
+    <option name="totallyTimeSpent" value="426626000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.34061834" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.35127932" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="0" weight="0.3286334" />
       <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49946696" weight="0.329718" />
@@ -535,28 +832,6 @@
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.33315566" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.3286334" />
-      <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49946696" weight="0.329718" />
-      <window_info anchor="bottom" id="Database Changes" order="2" />
-      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50053304" side_tool="true" visible="true" weight="0.329718" />
-      <window_info anchor="bottom" id="Version Control" order="4" weight="0.329718" />
-      <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Message" order="6" />
-      <window_info anchor="bottom" id="Find" order="7" />
-      <window_info anchor="bottom" id="Run" order="8" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="12" />
-      <window_info anchor="right" id="Database" order="0" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -612,7 +887,8 @@
     <MESSAGE value="Fix" />
     <MESSAGE value="Admin" />
     <MESSAGE value="Fix and Updata" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix and Updata" />
+    <MESSAGE value="集成 administrator" />
+    <option name="LAST_COMMIT_MESSAGE" value="集成 administrator" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -626,365 +902,358 @@
           <url>file://$PROJECT_DIR$/routes/api.php</url>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/app/Http/Controllers/Base/IndexController.php</url>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/routes/console.php">
+    <entry file="file://$PROJECT_DIR$/config/broadcasting.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/layouts/header.blade.php">
+    <entry file="file://$PROJECT_DIR$/config/captcha.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="80" column="62" lean-forward="true" selection-start-line="80" selection-start-column="62" selection-end-line="80" selection-end-column="62" />
+        <state relative-caret-position="288">
+          <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Base/TokenController.php">
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Validation/Validator.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+        <state relative-caret-position="-154">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Base/TemplateController.php">
+    <entry file="file://$PROJECT_DIR$/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="154" selection-start-line="154" selection-end-line="155" />
+        <state relative-caret-position="418">
+          <caret line="82" column="24" selection-start-line="82" selection-start-column="24" selection-end-line="82" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_21_035031_create_plug_lists_table.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/shared/_messages.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        <state relative-caret-position="152">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Games.php">
+    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap-sass/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
+    <entry file="file://$PROJECT_DIR$/app/helpers.php" />
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_21_024813_create_plug_shops_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/web-forms.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="120" column="22" selection-start-line="120" selection-start-column="22" selection-end-line="120" selection-end-column="22" />
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
-          <caret line="332" column="13" selection-start-line="332" selection-start-column="13" selection-end-line="332" selection-end-column="13" />
+          <caret line="941" column="13" selection-start-line="941" selection-start-column="13" selection-end-line="941" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php">
+    <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="600" column="20" selection-start-line="600" selection-start-column="20" selection-end-line="600" selection-end-column="20" />
+        <state relative-caret-position="57">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Validation/ValidatesRequests.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="51" column="10" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
+        <state relative-caret-position="290">
+          <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Base/UsersController.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/game/layouts/game_header.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        <state relative-caret-position="209">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/game/base/plug_shop.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="166" selection-start-line="166" selection-end-line="176" selection-end-column="11" />
+        <state relative-caret-position="304">
+          <caret line="139" column="81" selection-start-line="139" selection-start-column="81" selection-end-line="139" selection-end-column="81" />
+          <folding>
+            <element signature="e#5923#5955#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/game/base/plug_list.blade.php">
+    <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="51" column="69" lean-forward="true" selection-start-line="51" selection-start-column="69" selection-end-line="51" selection-end-column="69" />
+        <state relative-caret-position="768">
+          <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Validator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Policies/UserPolicy.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-21">
+          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="706">
+          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_06_091626_seed_roles_and_permissions_data.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/auth.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/verify.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_05_063757_create_plug_storages_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/ForgotPasswordController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/register.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="912">
+          <caret line="57" column="88" selection-start-line="57" selection-start-column="88" selection-end-line="57" selection-end-column="88" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/PlugShop.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" selection-start-line="8" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Server.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/base/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="90" selection-start-column="90" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/base/storage.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="98" column="49" selection-start-line="98" selection-start-column="45" selection-end-line="98" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/PlugStorage.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" selection-start-line="9" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/_header.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="568">
+          <caret line="59" selection-start-line="59" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/layouts/header.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="84" column="77" selection-start-line="84" selection-start-column="69" selection-end-line="84" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/LibrariesStorage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/Game/Game_304930.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
+          <folding>
+            <element signature="e#49#70#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_19_185004_create_libraries_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
           <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Librarie.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_19_163117_create_libraie_storages_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" selection-start-line="14" selection-end-line="26" selection-end-column="5" />
+          <folding>
+            <element signature="e#7#41#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Base/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="858">
+          <caret line="71" selection-start-line="71" selection-end-line="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/base/plug.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="67" column="72" selection-start-line="67" selection-start-column="72" selection-end-line="67" selection-end-column="72" />
+        <state relative-caret-position="456">
+          <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_03_121554_create_servers_table.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_19_185043_create_librarie_storages_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_05_063757_create_plug_storages_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="37" column="46" lean-forward="true" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/GameController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="304">
+          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+          <folding>
+            <element signature="e#7#41#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/PlugController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="84" column="32" lean-forward="true" selection-start-line="84" selection-start-column="32" selection-end-line="84" selection-end-column="32" />
-          <folding>
-            <element signature="e#47#68#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="190">
+          <caret line="73" column="34" lean-forward="true" selection-start-line="73" selection-start-column="34" selection-end-line="73" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/base/storage.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="60" column="36" lean-forward="true" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/StorageController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="68" column="36" lean-forward="true" selection-start-line="68" selection-start-column="36" selection-end-line="68" selection-end-column="36" />
+        <state relative-caret-position="1053">
+          <caret line="74" column="34" lean-forward="true" selection-start-line="74" selection-start-column="7" selection-end-line="74" selection-end-column="34" />
           <folding>
             <element signature="e#46#67#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/CheckForMaintenanceMode.php">
+    <entry file="file://$PROJECT_DIR$/app/Models/LibrarieStorages.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Exceptions/Handler.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/LibrarieController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="24" column="19" lean-forward="true" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/users/show.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/UserRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/BaseController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="53" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/EncryptCookies.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="17" column="58" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/Middleware/Authenticate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="54" selection-start-line="54" selection-end-line="69" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_8.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="840" column="9" selection-start-line="840" selection-start-column="9" selection-end-line="840" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/game/base/template.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3684">
-          <caret line="237" column="21" selection-start-line="237" selection-start-column="20" selection-end-line="237" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/game/base/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1197">
-          <caret line="84" column="45" lean-forward="true" selection-start-line="84" selection-start-column="45" selection-end-line="84" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="4" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Authenticate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+        <state relative-caret-position="644">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
           <folding>
-            <element signature="e#39#83#0#PHP" expanded="true" />
+            <element signature="e#47#79#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Game/BaseController.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/base/librarie.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" selection-start-line="13" selection-end-line="13" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/AuthServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/BroadcastServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/EventServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/RouteServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-439">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/summerblue/administrator/src/config/administrator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_06_091626_seed_roles_and_permissions_data.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="22" column="51" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/administrator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-572">
-          <caret line="74" column="63" selection-start-line="74" selection-start-column="63" selection-end-line="74" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/_header.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+        <state relative-caret-position="511">
+          <caret line="207" column="16" selection-start-line="207" selection-start-column="16" selection-end-line="207" selection-end-column="16" />
         </state>
       </provider>
     </entry>

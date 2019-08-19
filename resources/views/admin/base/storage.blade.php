@@ -55,6 +55,7 @@
                                 <th style="width: 80px">uuidShort</th>
                                 <th>插件名</th>
                                 <th>版本</th>
+                                <th>大小</th>
                                 <th>操作</th>
                             </tr>
                             </thead>
@@ -64,6 +65,7 @@
                                     <td id="uid">{{$plug->uuidShort}}</td>
                                     <td>{{$plug->name}}</td>
                                     <td>{{$plug->version}}</td>
+                                    <td>{{$plug->datasize}}</td>
                                     <td>
                                         <button id="buy" class="btn btn-success btn-xs" data-toggle="modal"
                                                 data-target="#Publish">修改

@@ -42,12 +42,11 @@
             <span class="icon-bar"></span>
         </button>
 
-
-
-        <div class="navbar-header">
-            <a class="pull-right btn btn-default" href="{{route('admin.index')}}" >开发者中心</a>
-        </div>
-
+        @can('manage_plugs')
+            <div class="navbar-header">
+                <a class="pull-right btn btn-default" href="{{route('admin.index')}}" >开发者中心</a>
+            </div>
+        @endcan
 
 
         <ul class="nav navbar-right navbar-top-links">
@@ -59,7 +58,7 @@
                 <ul class="dropdown-menu dropdown-user">
 
                     @can('manage_users')
-                        <a href="{{ url(config('administrator.uri')) }}"><i class="fa fa-tachometer-alt fa-fw"></i> 管理后台</a>
+                        <li> <a href="{{ url(config('administrator.uri')) }}"><i class="fa fa-industry fa-fw"></i> 管理后台</a> </li>
                     @endcan
 
 

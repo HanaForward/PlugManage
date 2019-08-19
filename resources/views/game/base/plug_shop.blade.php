@@ -138,7 +138,7 @@
                                         <input type="radio" id="balance" name="pay_channel" value="1"/>
                                         <label for="balance">
                                             <img style="width: 64px;height: 64px"
-                                                 src="http://aopsdkdownload.cn-hangzhou.alipay-pub.aliyun-inc.com/doc/ShaXiang.png">
+                                                 src="/img/money.png">
                                         </label>
                                         余额支付
                                     </div>

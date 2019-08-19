@@ -50,9 +50,13 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => ['required', 'string', 'max:255'],
+            'name' => ['required', 'string', 'max:20'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'captcha' => ['required', 'captcha'],
+        ], [
+            'validation.required' => '验证码不能为空',
+            'validation.captcha' => '请输入正确的验证码',
         ]);
     }
 
@@ -64,24 +68,27 @@ class RegisterController extends Controller
      */
     protected function show()
     {
-        return view('auth.create');
+        return view('auth.register');
 
     }
     protected function register(Request $request)
     {
         $this->validate($request, [
-            'username' => 'required|max:50',
+            'username' => 'required|max:15',
             'password' => 'required|confirmed|min:6',
             'name' => 'required|max:10',
             'email' => 'required|email|unique:users|max:255',
-
+            'captcha' => 'required|captcha'
+        ],[
+            'captcha.required' => '验证码不能为空',
+            'captcha.captcha' => '请输入正确的验证码',
         ]);
 
         $user = User::create([
             'name' => $request->name,
             'username' => $request->username,
             'email' => $request->email,
-            'password' => bcrypt($request->password),
+            'password' => $request->password,
         ]);
 
         return redirect()->route('user.show', [$user]);

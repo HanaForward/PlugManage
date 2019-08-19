@@ -47,22 +47,6 @@ class LoginController extends Controller
             'password' => 'required'
         ]);
 
-
-
-        /*
-
-        $user = User::create([
-            'username' => $request->username,
-            'password' => bcrypt($request->password),
-        ]);
-        Auth::login($user);
-        $user->assignRole('Founder');
-*/
-
-
-
-
-
         if (Auth::attempt($credentials)){
             session()->flash('success', '欢迎回来！');
             return redirect()->route("index",[Auth::user()]);

@@ -23,7 +23,7 @@
 </head>
 <body>
 @section('content')
-404
+
 @show
 
 </body>

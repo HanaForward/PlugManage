@@ -25,7 +25,9 @@ class StorageController extends Controller
             'game_id' =>$game_id,
         ])->get();
 
-        $Plugs = DB::select("SELECT * FROM plug_shops LEFT JOIN (SELECT plug_id,version FROM plug_storages WHERE user_id=".$user_id.") as plug_storages ON plug_shops.id = plug_storages.plug_id WHERE plug_shops.user_id=".$user_id);
+        $Plugs = DB::select("SELECT * FROM plug_shops LEFT JOIN (SELECT plug_id,version,OCTET_LENGTH(data) datasize FROM plug_storages WHERE user_id=".$user_id.") as plug_storages ON plug_shops.id = plug_storages.plug_id WHERE plug_shops.user_id=".$user_id);
+
+
 
         return view('admin.base.storage',['Plugs'=> $Plugs,'gameid' => $Gameid]);
     }
@@ -33,9 +35,6 @@ class StorageController extends Controller
     public function updata(Request $request)
     {
         $user_id = Auth::id();
-
-
-
 
         $PlugShop = PlugShop::where([
             'user_id' =>$user_id,
@@ -51,8 +50,6 @@ class StorageController extends Controller
 
         $realPath = $file->getRealPath();
         $plug_data = base64_encode(fread(fopen($realPath, "r"), $file->getSize()));
-
-
 
         $PlugStorage = PlugStorage::where([
             'user_id' =>$user_id,

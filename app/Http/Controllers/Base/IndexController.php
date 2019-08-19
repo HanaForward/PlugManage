@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Base;
 
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use App\Http\Controllers\Controller;
-
+use Illuminate\Support\Facades\Auth;
 
 
 class IndexController extends Controller

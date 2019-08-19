@@ -80,8 +80,15 @@
                                 <li>
                                     <a>{{$Game->GameName}}</a>
                                     <ul class="nav nav-third-level">
+
+                                        @can('manage_users')
+                                        <li> <a href="{{route('admin.librarie',$Game->GameId)}}">前置管理</a></li>
+                                        @endcan
+
+
                                         <li> <a href="{{route('admin.plug',$Game->GameId)}}">插件管理</a></li>
                                         <li> <a href="{{route('admin.storage',$Game->GameId)}}">版本管理</a></li>
+
                                     </ul>
                                 </li>
                             @endforeach

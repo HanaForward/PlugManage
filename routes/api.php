@@ -28,6 +28,8 @@ Route::group(['middleware'=>'auth:web-api'],function (){
         Route::get('/login', 'Api\Game\Game_304930@login');
 
         Route::get('/get_plug', 'Api\Game\Game_304930@GetPlug');
+        Route::get('/get_lib', 'Api\Game\Game_304930@GetLib');
+
 
 
     });

@@ -71,6 +71,7 @@ class PlugController extends Controller
 
         PlugStorage::create([
             'plug_id' => $PlugShop->id,
+            'user_id' => $user_id,
             'version' => 'releases',
             'data' => $plug_data,
         ]);

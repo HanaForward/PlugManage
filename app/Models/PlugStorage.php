@@ -9,12 +9,11 @@ class PlugStorage extends Model
 
     public $timestamps = false;
 
-
     protected $fillable = [
-        'plug_id', 'version', 'data',
+        'user_id','plug_id', 'version', 'data',
     ];
     protected $hidden = [
-        'plug_id','created_at',
+        'user_id','plug_id','created_at',
     ];
 
 }
