@@ -1,223 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="17dfb580-964f-4273-8028-8030d130e39a" name="Default Changelist" comment="集成 administrator">
-      <change afterPath="$PROJECT_DIR$/config/administrator/users.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/accounting.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/admin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/base.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/ckeditor/CHANGES.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/ckeditor/LICENSE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/ckeditor/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/ckeditor/bower.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/ckeditor/ckeditor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/ckeditor/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/ckeditor/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/ckeditor/contents.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/ckeditor/lang/en-au.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/ckeditor/lang/eu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/ckeditor/lang/uk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/ckeditor/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/ckeditor/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/history/native.history.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery-migrate.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/customscroll/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/customscroll/customscroll.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/customscroll/jquery.customscroll.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-af.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-ar-DZ.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-ar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-az.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-be.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-bg.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-bs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-ca.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-cs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-cy-GB.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-da.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-de.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-el.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-en-AU.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-en-GB.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-en-NZ.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-eo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-es.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-et.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-eu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-fa.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-fi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-fo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-fr-CA.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-fr-CH.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-fr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-gl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-he.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-hi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-hr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-hu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-hy.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-id.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-is.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-it.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-ja.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-ka.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-kk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-km.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-ko.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-ky.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-lb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-lt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-lv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-mk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-ml.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-ms.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-nb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-nl-BE.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-nl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-nn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-no.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-pl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-pt-BR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-pt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-rm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-ro.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-ru.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-sk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-sl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-sq.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-sr-SR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-sr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-sv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-ta.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-th.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-tj.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-tr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-uk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-vi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-zh-CN.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-zh-HK.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/i18n/jquery.ui.datepicker-zh-TW.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/jquery-1.8.2.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/jquery-ui-1.10.3.custom.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/jquery-ui-timepicker-addon.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/jquery.lw-colorpicker.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/jquery.ui.slider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-af.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-bg.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-ca.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-cs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-da.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-de.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-el.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-es.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-et.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-eu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-fi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-fr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-gl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-he.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-hu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-id.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-it.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-ja.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-ko.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-lt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-nl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-no.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-pl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-pt-BR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-pt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-ro.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-ru.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-sk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-sv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-th.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-tr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-uk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-vi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-zh-CN.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/localization/jquery-ui-timepicker-zh-TW.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/component.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/release.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2-spinner.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2.jquery.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_ar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_ca.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_cs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_da.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_de.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_el.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_en.js.template" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_es.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_et.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_eu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_fi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_fr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_gl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_he.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_hr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_hu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_id.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_is.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_it.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_ja.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_ko.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_lt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_lv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_mk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_nl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_no.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_pl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_pt-BR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_pt-PT.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_ro.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_ru.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_sk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_sv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_tr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_ua.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_vi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_zh-CN.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2_locale_zh-TW.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/jquery/select2/select2x2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/markdown.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/qrcode.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/packages/summerblue/administrator/js/settings.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/base/librarie.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/shared/_messages.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PlugManage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PlugManage.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="17dfb580-964f-4273-8028-8030d130e39a" name="Default Changelist" comment="Lib">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/PlugController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/PlugController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/StorageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/StorageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/Game/Game_304930.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/Game/Game_304930.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Base/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Base/IndexController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/PlugStorage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/PlugStorage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/administrator.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/administrator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/base/storage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/base/storage.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/game/base/plug_shop.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/game/base/plug_shop.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/_header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/auth.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/auth.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/base/librarie.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/base/librarie.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -257,8 +43,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/base/librarie.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
-              <caret line="207" column="16" selection-start-line="207" selection-start-column="16" selection-end-line="207" selection-end-column="16" />
+            <state relative-caret-position="340">
+              <caret line="132" column="30" selection-start-line="132" selection-start-column="30" selection-end-line="132" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -446,10 +232,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="-202" />
+    <option name="y" value="-14" />
     <option name="width" value="1934" />
-    <option name="height" value="814" />
+    <option name="height" value="732" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -659,7 +445,7 @@
       <workItem from="1565585844762" duration="50498000" />
       <workItem from="1565917550486" duration="7453000" />
       <workItem from="1566036497521" duration="10543000" />
-      <workItem from="1566194773744" duration="12718000" />
+      <workItem from="1566194773744" duration="12965000" />
     </task>
     <task id="LOCAL-00001" summary="Buy">
       <created>1563973502204</created>
@@ -801,11 +587,25 @@
       <option name="project" value="LOCAL" />
       <updated>1565780339112</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Lib">
+      <created>1566224069388</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1566224069388</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Lib">
+      <created>1566224085477</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1566224085477</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="426626000" />
+    <option name="totallyTimeSpent" value="426873000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -888,7 +688,8 @@
     <MESSAGE value="Admin" />
     <MESSAGE value="Fix and Updata" />
     <MESSAGE value="集成 administrator" />
-    <option name="LAST_COMMIT_MESSAGE" value="集成 administrator" />
+    <MESSAGE value="Lib" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lib" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1252,8 +1053,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/base/librarie.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="207" column="16" selection-start-line="207" selection-start-column="16" selection-end-line="207" selection-end-column="16" />
+        <state relative-caret-position="340">
+          <caret line="132" column="30" selection-start-line="132" selection-start-column="30" selection-end-line="132" selection-end-column="30" />
         </state>
       </provider>
     </entry>

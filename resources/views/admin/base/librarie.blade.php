@@ -131,7 +131,6 @@
                             <button type="button" class="btn btn-default right" data-dismiss="modal">取消修改</button>
                             <button id="submitBtn" type="button" class="btn btn-primary" onclick="submit()">保存修改</button>
                         </div>
-
                     </form>
                 </div>
             </div>
