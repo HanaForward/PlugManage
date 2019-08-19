@@ -125,9 +125,7 @@
                             </div>
                         </div>
 
-
                         <hr>
-
                         <div class="text-center">
                             <span id="returnMessage" class="glyphicon"> </span>
                             <button type="button" class="btn btn-default right" data-dismiss="modal">取消修改</button>
@@ -139,7 +137,6 @@
             </div>
         </div>
     </div>
-
 
 
 
